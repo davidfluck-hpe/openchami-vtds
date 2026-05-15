@@ -141,7 +141,7 @@ mkdir -p /root/.ssh
 touch /root/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
 gcloud secrets versions access latest \
-       --secret="github-deploy-key" > /root/.ssh/id_rsa
+       --secret="${GITHUB_KEY_SECRET_NAME}" > /root/.ssh/id_rsa
 
 # Make sure we "know" the host key for GitHub
 ssh-keyscan github.com >> /root/.ssh/known_hosts
