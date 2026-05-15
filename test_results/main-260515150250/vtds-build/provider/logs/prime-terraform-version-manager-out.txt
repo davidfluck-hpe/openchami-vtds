@@ -1,8 +1,1 @@
-[32mInstalling Terraform v1.15.3[0m
-[32mDownloading release tarball from https://releases.hashicorp.com/terraform/1.15.3/terraform_1.15.3_linux_amd64.zip[0m
-[32mDownloading SHA hash file from https://releases.hashicorp.com/terraform/1.15.3/terraform_1.15.3_SHA256SUMS[0m
-[33mNot instructed to use Local PGP (/root/.tfenv/use-{gpgv,gnupg}) & No keybase install found, skipping OpenPGP signature verification[0m
-[32mArchive:  /tmp/tfenv_download.uOK7Ee/terraform_1.15.3_linux_amd64.zip[0m
-[32m  inflating: /root/.tfenv/versions/1.15.3/LICENSE.txt  [0m
-[32m  inflating: /root/.tfenv/versions/1.15.3/terraform  [0m
-[32mInstallation of terraform v1.15.3 successful. To make this your default version, run 'tfenv use 1.15.3'[0m
+Terraform v1.15.3 is already installed
