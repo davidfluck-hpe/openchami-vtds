@@ -6,7 +6,7 @@ on:
       pr_number:
         required: true
         type: string
-      branch:
+      ref:
         required: true
         type: string
 jobs:
