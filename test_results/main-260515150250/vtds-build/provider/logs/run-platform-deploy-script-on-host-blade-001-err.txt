@@ -1,0 +1,36 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+debconf: delaying package configuration, since apt-utils is not installed
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Synchronizing state of kea-dhcp4-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable kea-dhcp4-server
+Removed /etc/systemd/system/multi-user.target.wants/kea-dhcp4-server.service.
+Synchronizing state of kea-dhcp6-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable kea-dhcp6-server
+Removed /etc/systemd/system/multi-user.target.wants/kea-dhcp6-server.service.
+Synchronizing state of kea-dhcp-ddns-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable kea-dhcp-ddns-server
+Removed /etc/systemd/system/kea-dhcp6-server.service.wants/kea-dhcp-ddns-server.service.
+Removed /etc/systemd/system/kea-dhcp4-server.service.wants/kea-dhcp-ddns-server.service.
+Synchronizing state of kea-ctrl-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable kea-ctrl-agent
+Removed /etc/systemd/system/kea-dhcp6-server.service.wants/kea-ctrl-agent.service.
+Removed /etc/systemd/system/kea-dhcp4-server.service.wants/kea-ctrl-agent.service.
+Synchronizing state of dnsmasq.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable dnsmasq
+Removed /etc/systemd/system/multi-user.target.wants/dnsmasq.service.
+Synchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable nginx
+Removed /etc/systemd/system/multi-user.target.wants/nginx.service.
+Cloning into '/tmp/tmpcn8ev46b-sushy-tools'...
+Switched to a new branch 'With-Libvirt-By-Name'

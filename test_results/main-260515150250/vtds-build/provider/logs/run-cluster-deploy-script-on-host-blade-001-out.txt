@@ -1,0 +1,150 @@
+Network default destroyed
+
+Network default has been undefined
+
+Network bladenet defined from /tmp/tmp9xwnr_pw
+
+Network bladenet started
+
+Network bladenet marked as autostarted
+
+Network compnet defined from /tmp/tmp31wdhnf7
+
+Network compnet started
+
+Network compnet marked as autostarted
+
+Network hwmgtnet defined from /tmp/tmp5c324iwt
+
+Network hwmgtnet started
+
+Network hwmgtnet marked as autostarted
+
+Network mgmtnet defined from /tmp/tmpn2v703nr
+
+Network mgmtnet started
+
+Network mgmtnet marked as autostarted
+
+
+
+
+
+
+
+
+
+
+
+Domain 'x2000c0s0b0n0' defined from /tmp/tmpvthx8ey5
+
+Domain 'x2000c0s0b0n1' defined from /tmp/tmpk42z5kk1
+
+Domain 'x2000c0s0b0n2' defined from /tmp/tmpzkw5okrk
+
+Domain 'x2000c0s0b0n3' defined from /tmp/tmp5xeogzao
+
+'/root/.ssh' -> '/tmp/tmpoldao193/install_files/.ssh'
+'/root/.ssh/id_rsa' -> '/tmp/tmpoldao193/install_files/.ssh/id_rsa'
+'/root/.ssh/id_rsa.pub' -> '/tmp/tmpoldao193/install_files/.ssh/id_rsa.pub'
+'/root/.ssh/authorized_keys' -> '/tmp/tmpoldao193/install_files/.ssh/authorized_keys'
+
+Starting install...
+Retrieving 'vmlinuz'                                        |    0 B  00:00 ... 
+Retrieving 'initrd.img'                                     |    0 B  00:00 ... 
+Allocating 'boot_disk.img'                                  |    0 B  00:00 ... 
+Creating domain...                                          |    0 B  00:00     
+
+Domain is still running. Installation may be in progress.
+Waiting for the installation to complete.
+Domain has shutdown. Continuing.
+Domain creation completed.
+Restarting guest.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nodes: [<__main__.VirtualNode object at 0x70b88175b520>, <__main__.VirtualNode object at 0x70b8810eba00>, <__main__.VirtualNode object at 0x70b8810eb7f0>, <__main__.VirtualNode object at 0x70b8810eb9a0>, <__main__.VirtualNode object at 0x70b8810eb8e0>]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

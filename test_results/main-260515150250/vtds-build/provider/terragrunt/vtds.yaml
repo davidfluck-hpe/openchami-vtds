@@ -1,0 +1,675 @@
+provider:
+  blade_interconnects:
+    base-interconnect:
+      application_metadata: {}
+      description: 'Default blade interconnect based on the ''base-interconnect''
+        interconnect
+
+        class definition.
+
+        '
+      enable_ipv6_ula: false
+      firewall:
+        egress_rules:
+        - allow:
+          - ports: []
+            protocol: all
+          deny: []
+          description: allow egress from anywhere inside to anywhere outside
+          destination_ranges:
+          - 0.0.0.0/0
+          disabled: false
+          log_config: null
+          name: unrestricted-external-egress
+          priority: 100
+          source_ranges:
+          - 0.0.0.0/0
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        ingress_rules:
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          deny: []
+          description: allow SSH ingress from GCP's Identity Aware Proxy (IAP)
+          destination_ranges: null
+          disabled: false
+          log_config: null
+          name: iap-ssh-ingress
+          priority: 100
+          source_ranges:
+          - 35.235.240.0/20
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          - ports:
+            - '4789'
+            protocol: udp
+          - ports: []
+            protocol: icmp
+          deny: []
+          description: 'allow SSH, VxLAN and ICMP ingress from any host on the blade
+
+            interconnect subnet.
+
+            '
+          destination_ranges: null
+          disabled: false
+          log_config: null
+          name: other-ingress
+          priority: 100
+          source_ranges:
+          - 10.255.0.0/16
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        rules:
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          deny: []
+          description: allow SSH ingress from GCP's Identity Aware Proxy (IAP)
+          direction: INGRESS
+          disabled: false
+          log_config: null
+          name: iap-ssh-ingress
+          priority: 100
+          ranges:
+          - 35.235.240.0/20
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          - ports:
+            - '4789'
+            protocol: udp
+          - ports: []
+            protocol: icmp
+          deny: []
+          description: 'allow SSH, VxLAN and ICMP ingress from any host on the blade
+
+            interconnect subnet.
+
+            '
+          direction: INGRESS
+          disabled: false
+          log_config: null
+          name: other-ingress
+          priority: 100
+          ranges:
+          - 10.255.0.0/16
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports: []
+            protocol: all
+          deny: []
+          description: allow egress from anywhere inside to anywhere outside
+          direction: EGRESS
+          disabled: false
+          log_config: null
+          name: unrestricted-external-egress
+          priority: 100
+          ranges:
+          - 0.0.0.0/0
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+      flow_logs: 'false'
+      flow_logs_filter: 'true'
+      flow_logs_interval: INTERVAL_5_SEC
+      flow_logs_metadata: INCLUDE_ALL_METADATA
+      flow_logs_metadata_fields: []
+      flow_logs_sampling: '0.5'
+      internal_ipv6_range: ''
+      ipv4_cidr: 10.255.0.0/16
+      ipv6_access_type: null
+      mtu: 0
+      network_firewall_policy_enforcement_order: null
+      network_name: base-interconnect
+      parent_class: null
+      private_access: 'true'
+      private_ipv6_access: null
+      pure_base_class: true
+      role: null
+      routes:
+      - description: Placeholder for a route, override this
+        destination_range: 0.0.0.0/0
+        name: base-route
+        next_hop_internet: false
+        next_hop_ip: 1.2.3.4
+        priority: '1000'
+        tags: base-route-tag
+      routing_mode: GLOBAL
+      stack_type: null
+    blade-interconnect:
+      application_metadata: {}
+      description: 'A blade interconnect based on ''base interconnect'' to facilitate
+        testing
+
+        of blade interconnect inheritance.
+
+        '
+      enable_ipv6_ula: false
+      firewall:
+        egress_rules:
+        - allow:
+          - ports: []
+            protocol: all
+          deny: []
+          description: allow egress from anywhere inside to anywhere outside
+          destination_ranges:
+          - 0.0.0.0/0
+          disabled: false
+          log_config: null
+          name: unrestricted-external-egress
+          priority: 100
+          source_ranges:
+          - 0.0.0.0/0
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        ingress_rules:
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          deny: []
+          description: allow SSH ingress from GCP's Identity Aware Proxy (IAP)
+          destination_ranges: null
+          disabled: false
+          log_config: null
+          name: iap-ssh-ingress
+          priority: 100
+          source_ranges:
+          - 35.235.240.0/20
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          - ports:
+            - '4789'
+            protocol: udp
+          - ports: []
+            protocol: icmp
+          deny: []
+          description: 'allow SSH, VxLAN and ICMP ingress from any host on the blade
+
+            interconnect subnet.
+
+            '
+          destination_ranges: null
+          disabled: false
+          log_config: null
+          name: other-ingress
+          priority: 100
+          source_ranges:
+          - 10.255.0.0/16
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        rules:
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          deny: []
+          description: allow SSH ingress from GCP's Identity Aware Proxy (IAP)
+          direction: INGRESS
+          disabled: false
+          log_config: null
+          name: iap-ssh-ingress
+          priority: 100
+          ranges:
+          - 35.235.240.0/20
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports:
+            - '22'
+            protocol: tcp
+          - ports:
+            - '4789'
+            protocol: udp
+          - ports: []
+            protocol: icmp
+          deny: []
+          description: 'allow SSH, VxLAN and ICMP ingress from any host on the blade
+
+            interconnect subnet.
+
+            '
+          direction: INGRESS
+          disabled: false
+          log_config: null
+          name: other-ingress
+          priority: 100
+          ranges:
+          - 10.255.0.0/16
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+        - allow:
+          - ports: []
+            protocol: all
+          deny: []
+          description: allow egress from anywhere inside to anywhere outside
+          direction: EGRESS
+          disabled: false
+          log_config: null
+          name: unrestricted-external-egress
+          priority: 100
+          ranges:
+          - 0.0.0.0/0
+          source_service_accounts: null
+          source_tags: null
+          target_service_accounts: null
+          target_tags: null
+      flow_logs: 'false'
+      flow_logs_filter: 'true'
+      flow_logs_interval: INTERVAL_5_SEC
+      flow_logs_metadata: INCLUDE_ALL_METADATA
+      flow_logs_metadata_fields: []
+      flow_logs_sampling: '0.5'
+      internal_ipv6_range: ''
+      ipv4_cidr: 10.255.0.0/16
+      ipv6_access_type: null
+      mtu: 0
+      network_firewall_policy_enforcement_order: null
+      network_name: blade-interconnect
+      parent_class: null
+      private_access: 'true'
+      private_ipv6_access: null
+      pure_base_class: false
+      role: null
+      routes: []
+      routing_mode: GLOBAL
+      stack_type: null
+  commands:
+    gcloud: gcloud
+    terragrunt: terragrunt
+  organization:
+    billing_account: 01C2AB-21F156-585470
+    name: hpe
+    org_id: organizations/980209705768
+    parent: organizations/980209705768
+    seed_project: hpe-dev-seed
+    trusted_cidrs:
+    - 136.162.34.1/32
+  project:
+    activate_apis_default:
+    - admin.googleapis.com
+    - cloudbilling.googleapis.com
+    - cloudresourcemanager.googleapis.com
+    - iam.googleapis.com
+    - serviceusage.googleapis.com
+    - secretmanager.googleapis.com
+    activate_service_identities: []
+    auto_create_network: false
+    base_name: ochamitest-4a8ef2f837
+    bucket_force_destroy: true
+    bucket_labels: {}
+    bucket_location: null
+    bucket_name: null
+    bucket_pap: inherited
+    bucket_project: null
+    bucket_ula: true
+    bucket_versioning: false
+    consumer_quotas: null
+    create_project_sa: true
+    default_network_tier: null
+    deletion_policy: DELETE
+    folder_id: '525773635451'
+    gcloud_skip_download: true
+    group_name: vshasta2-owners
+    group_role: roles/owner
+    labels:
+      terraform: 'true'
+    location: US
+    orgpolicies_skip_execution: false
+    random_project_id: true
+    region: us-central1
+    trusted_cidrs: []
+    zone: us-central1-a
+  secrets:
+    blade_ssh_key:
+      annotations:
+        layer: provider
+      application_metadata: {}
+      labels: {}
+      name: blade-ssh-key
+  terragrunt:
+    terraform_dummy_version: latest
+    terraform_version: 1.9.7
+    terragrunt_dummy_version: latest
+    terragrunt_version: 0.68.1
+  virtual_blades:
+    base-blade:
+      access_config:
+      - nat_ip: ''
+        network_tier: PREMIUM
+      add_hostname_suffix: true
+      application_metadata: {}
+      availability:
+        automatic_restart: false
+        on_host_maintenance: MIGRATE
+        preemptible: false
+        spot: false
+        spot_instance_termination_action: STOP
+      blade_interconnect:
+        additional_networks: []
+        ip_addrs: []
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: base-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 0
+      gpu: null
+      hostname: base
+      hostname_suffix_separator: '-'
+      ipv6_access_config: []
+      labels: {}
+      metadata:
+        metadata:
+          serial-port-enable: 'true'
+          ssh-keys: 'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCu27i/HwwNt6ydpGJ2HiEIp86RWbCtu2e63/Ui+SKUYwN9PKLE22GwPwhWMdxKyRgrCH6TFyQWNgtOFg7b+3Fl/0WDJYGhb4iILIyOj/AzulYe+lzMLEtAc/bWyC8F6Bi0NFBlk03SGVcaRn2t8nzCporGq1gGNhc1sSATx8TPNuMZmZmcIoOLd9bEWRzy+cfpfiPX4/rQShKvytVGj9Y6lYImxH1Gh6M/1EYv7sk64fa+zBWxWrEhUL9/DInBUYWUmRnYJUIYto6yW1JdWksbDHXI/zG+9BLHz8tRLR75OShAt56+AQJpWsnmSu5VEEhtOMeV2TAAMW42A17LQsDcYmcj5egRCFM9LxzJv2R0mqibsOJLc7mmYYeetRFI4oXWYTZkGwdYLWulwZxbNs2ic2dj4sPtfqqvTsXTeKK1Eps3HwmOnQsoWp71CkNeG1cAzN+Gx5/kYQJVAX/oDBKHVbxFQDaGwKkmLcSujbNbZAWrh9e/mdh7LAKJ30+KJhk=
+            root@402478a8e278
+
+            '
+        startup_script: ''
+      name_prefix: base
+      parent_class: null
+      pure_base_class: true
+      resource_policies: []
+      security:
+        enable_confidential_vm: false
+        enable_shielded_vm: false
+        shielded_instance_config:
+          enable_integrity_monitoring: true
+          enable_secure_boot: true
+          enable_vtpm: true
+      service_account_iam:
+        billing: []
+        cluster_project: []
+        clusters_folder: []
+        image_source: []
+        organization: []
+        seed_project: []
+      ssh_key_secret: blade-ssh-key
+      tags: []
+      vm:
+        additional_disks:
+        - auto_delete: true
+          boot: false
+          device_name: sdb
+          disk_labels: {}
+          disk_name: null
+          disk_size_gb: 1024
+          disk_type: pd-standard
+          source_snapshot: null
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: {}
+          disk_size_gb: 10
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-4
+        min_cpu_platform: ''
+        threads_per_core: 1
+    compute-blade:
+      access_config:
+      - nat_ip: ''
+        network_tier: PREMIUM
+      add_hostname_suffix: true
+      application_metadata:
+        xnames:
+        - x4000c0s0b0
+        - x4000c0s0b1
+        - x4000c0s0b2
+        - x4000c0s0b3
+        - x4000c0s1b0
+        - x4000c0s1b1
+        - x4000c0s1b2
+        - x4000c0s1b3
+        - x4000c0s2b0
+        - x4000c0s2b1
+        - x4000c0s2b2
+        - x4000c0s2b3
+        - x4000c0s3b0
+        - x4000c0s3b1
+        - x4000c0s3b2
+        - x4000c0s3b3
+      availability:
+        automatic_restart: false
+        on_host_maintenance: MIGRATE
+        preemptible: false
+        spot: false
+        spot_instance_termination_action: STOP
+      blade_interconnect:
+        additional_networks: []
+        ip_addrs:
+        - 10.255.1.1
+        - 10.255.1.2
+        - 10.255.1.3
+        - 10.255.1.4
+        - 10.255.1.5
+        - 10.255.1.6
+        - 10.255.1.7
+        - 10.255.1.8
+        - 10.255.1.9
+        - 10.255.1.10
+        - 10.255.1.11
+        - 10.255.1.12
+        - 10.255.1.13
+        - 10.255.1.14
+        - 10.255.1.15
+        - 10.255.1.16
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: blade-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 0
+      gpu: null
+      hostname: compute-blade
+      hostname_suffix_separator: '-'
+      ipv6_access_config: []
+      labels: {}
+      metadata:
+        metadata:
+          serial-port-enable: 'true'
+          ssh-keys: 'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCu27i/HwwNt6ydpGJ2HiEIp86RWbCtu2e63/Ui+SKUYwN9PKLE22GwPwhWMdxKyRgrCH6TFyQWNgtOFg7b+3Fl/0WDJYGhb4iILIyOj/AzulYe+lzMLEtAc/bWyC8F6Bi0NFBlk03SGVcaRn2t8nzCporGq1gGNhc1sSATx8TPNuMZmZmcIoOLd9bEWRzy+cfpfiPX4/rQShKvytVGj9Y6lYImxH1Gh6M/1EYv7sk64fa+zBWxWrEhUL9/DInBUYWUmRnYJUIYto6yW1JdWksbDHXI/zG+9BLHz8tRLR75OShAt56+AQJpWsnmSu5VEEhtOMeV2TAAMW42A17LQsDcYmcj5egRCFM9LxzJv2R0mqibsOJLc7mmYYeetRFI4oXWYTZkGwdYLWulwZxbNs2ic2dj4sPtfqqvTsXTeKK1Eps3HwmOnQsoWp71CkNeG1cAzN+Gx5/kYQJVAX/oDBKHVbxFQDaGwKkmLcSujbNbZAWrh9e/mdh7LAKJ30+KJhk=
+            root@402478a8e278
+
+            '
+        startup_script: ''
+      name_prefix: compute-blade
+      parent_class: null
+      pure_base_class: false
+      resource_policies: []
+      security:
+        enable_confidential_vm: false
+        enable_shielded_vm: false
+        shielded_instance_config:
+          enable_integrity_monitoring: true
+          enable_secure_boot: true
+          enable_vtpm: true
+      service_account_iam:
+        billing: []
+        cluster_project: []
+        clusters_folder: []
+        image_source: []
+        organization: []
+        seed_project: []
+      ssh_key_secret: blade-ssh-key
+      tags: []
+      vm:
+        additional_disks:
+        - auto_delete: true
+          boot: false
+          device_name: sdb
+          disk_labels: {}
+          disk_name: null
+          disk_size_gb: 1024
+          disk_type: pd-standard
+          source_snapshot: null
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: {}
+          disk_size_gb: 1000
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-16
+        min_cpu_platform: ''
+        threads_per_core: 1
+    host-blade:
+      access_config:
+      - nat_ip: ''
+        network_tier: PREMIUM
+      add_hostname_suffix: true
+      application_metadata:
+        xnames:
+        - x2000c0s0b0
+        - x2000c0s0b1
+        - x2000c0s0b2
+        - x2000c0s0b3
+        - x2000c0s1b0
+        - x2000c0s1b1
+        - x2000c0s1b2
+        - x2000c0s1b3
+        - x2000c0s2b0
+        - x2000c0s2b1
+        - x2000c0s2b2
+        - x2000c0s2b3
+        - x2000c0s3b0
+        - x2000c0s3b1
+        - x2000c0s3b2
+        - x2000c0s3b3
+      availability:
+        automatic_restart: false
+        on_host_maintenance: MIGRATE
+        preemptible: false
+        spot: false
+        spot_instance_termination_action: STOP
+      blade_interconnect:
+        additional_networks: []
+        ip_addrs:
+        - 10.255.1.1
+        - 10.255.1.2
+        - 10.255.1.3
+        - 10.255.1.4
+        - 10.255.1.5
+        - 10.255.1.6
+        - 10.255.1.7
+        - 10.255.1.8
+        - 10.255.1.9
+        - 10.255.1.10
+        - 10.255.1.11
+        - 10.255.1.12
+        - 10.255.1.13
+        - 10.255.1.14
+        - 10.255.1.15
+        - 10.255.1.16
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: blade-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 1
+      gpu: null
+      hostname: host-blade
+      hostname_suffix_separator: '-'
+      ipv6_access_config: []
+      labels: {}
+      metadata:
+        metadata:
+          serial-port-enable: 'true'
+          ssh-keys: 'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCu27i/HwwNt6ydpGJ2HiEIp86RWbCtu2e63/Ui+SKUYwN9PKLE22GwPwhWMdxKyRgrCH6TFyQWNgtOFg7b+3Fl/0WDJYGhb4iILIyOj/AzulYe+lzMLEtAc/bWyC8F6Bi0NFBlk03SGVcaRn2t8nzCporGq1gGNhc1sSATx8TPNuMZmZmcIoOLd9bEWRzy+cfpfiPX4/rQShKvytVGj9Y6lYImxH1Gh6M/1EYv7sk64fa+zBWxWrEhUL9/DInBUYWUmRnYJUIYto6yW1JdWksbDHXI/zG+9BLHz8tRLR75OShAt56+AQJpWsnmSu5VEEhtOMeV2TAAMW42A17LQsDcYmcj5egRCFM9LxzJv2R0mqibsOJLc7mmYYeetRFI4oXWYTZkGwdYLWulwZxbNs2ic2dj4sPtfqqvTsXTeKK1Eps3HwmOnQsoWp71CkNeG1cAzN+Gx5/kYQJVAX/oDBKHVbxFQDaGwKkmLcSujbNbZAWrh9e/mdh7LAKJ30+KJhk=
+            root@402478a8e278
+
+            '
+        startup_script: ''
+      name_prefix: host-blade
+      parent_class: null
+      pure_base_class: false
+      resource_policies: []
+      security:
+        enable_confidential_vm: false
+        enable_shielded_vm: false
+        shielded_instance_config:
+          enable_integrity_monitoring: true
+          enable_secure_boot: true
+          enable_vtpm: true
+      service_account_iam:
+        billing: []
+        cluster_project: []
+        clusters_folder: []
+        image_source: []
+        organization: []
+        seed_project: []
+      ssh_key_secret: blade-ssh-key
+      tags: []
+      vm:
+        additional_disks:
+        - auto_delete: true
+          boot: false
+          device_name: sdb
+          disk_labels: {}
+          disk_name: null
+          disk_size_gb: 1024
+          disk_type: pd-standard
+          source_snapshot: null
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: {}
+          disk_size_gb: 1000
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-16
+        min_cpu_platform: ''
+        threads_per_core: 1

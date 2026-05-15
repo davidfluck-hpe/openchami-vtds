@@ -1,0 +1,30 @@
+++++++++ vtds-build/cluster/logs/TEST-CASE-compute-node-ssh-on-management-001-out.txt ++++++++
+TEST_NAME: compute-node-ssh
+TEST_DESCRIPTION: A simple test that waits for the compute nodes configured within the OpenCHAMI cluster to become available and then verifies that each one can be reached from the rocky user on the management (head) node using SSH. 
+TEST_ENTRYPOINT: /home/rocky/cluster_tests/compute_node_ssh/entrypoint.sh
+TEST_RESULT: SUCCESS
+======== Test Output ========
+Attempting to SSH to nid-001.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.ssh: connect to host nid-001 port 22: Connection refused
+.Warning: Permanently added 'nid-001' (ED25519) to the list of known hosts.
+Attempting to SSH to nid-002.ssh: connect to host nid-002 port 22: Connection refused
+.ssh: connect to host nid-002 port 22: Connection refused
+.ssh: connect to host nid-002 port 22: Connection refused
+.Warning: Permanently added 'nid-002' (ED25519) to the list of known hosts.
+Attempting to SSH to nid-003.ssh: connect to host nid-003 port 22: Connection refused
+.ssh: connect to host nid-003 port 22: Connection refused
+.Warning: Permanently added 'nid-003' (ED25519) to the list of known hosts.
+Attempting to SSH to nid-004.ssh: connect to host nid-004 port 22: Connection refused
+.ssh: connect to host nid-004 port 22: Connection refused
+.Warning: Permanently added 'nid-004' (ED25519) to the list of known hosts.

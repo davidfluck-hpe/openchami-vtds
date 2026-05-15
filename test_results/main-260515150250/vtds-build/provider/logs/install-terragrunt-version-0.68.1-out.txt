@@ -1,0 +1,5 @@
+[0;32m[INFO] Installing Terragrunt v0.68.1[0;39m
+[0;32m[INFO] Downloading release tarball from https://github.com/gruntwork-io/terragrunt/releases/download/v0.68.1/terragrunt_linux_amd64[0;39m
+[0;32m[INFO] Installation of terragrunt v0.68.1 successful[0;39m
+[0;32m[INFO] Switching to v0.68.1[0;39m
+[0;32m[INFO] Switching completed[0;39m
