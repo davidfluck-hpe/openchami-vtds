@@ -25,7 +25,4 @@ jobs:
           version: "565.0.0"
       - name: 'SSH'
         run: |
-          export TEST_REPO_URL='git@github.com:davidfluck-hpe/openchami-vtds.git'
-          export GITHUB_KEY_SECRET_NAME='github-df-deploy-key'
-          export OPENCHAMI_VERSION='main'
-          gcloud compute ssh testbuilder@openchami-tester-001 --project=hpe-openchami-tester --zone=us-central1-a --command="/usr/bin/bash start_test.sh"
+          gcloud compute ssh testbuilder@openchami-tester-001 --project=hpe-openchami-tester --zone=us-central1-a --command="TEST_REPO_URL='git@github.com:davidfluck-hpe/openchami-vtds.git' GITHUB_KEY_SECRET_NAME='github-df-deploy-key' OPENCHAMI_VERSION='main' /usr/bin/bash start_test.sh"
