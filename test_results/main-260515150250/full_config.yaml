@@ -1,0 +1,1351 @@
+application:
+  cluster:
+    domain_name: openchami.cluster
+  deployment:
+    mode: quadlet
+  discovery_networks:
+    hardware_management:
+      blade_classes:
+      - host-blade
+      network_cidr: null
+      network_name: hwmgtnet
+      redfish_password: null # Removed
+      redfish_username: root
+  dns:
+    public: 169.254.169.254
+    site: 10.234.0.1
+  host:
+    network: compnet
+    node_class: management_node
+    node_name: demo
+  images:
+    active: compute-debug-rocky9
+    build_order:
+    - rocky-base-9
+    - compute-base-rocky9
+    builders:
+      compute-base-rocky9:
+        cmds: []
+        options:
+          layer_type: base
+          name: compute-base
+          parent: '{{ hosting_config.management.net_head_fqdn }}:5000/demo/rocky-base:9'
+          pkg_manager: dnf
+          publish_registry: '{{ hosting_config.management.net_head_fqdn }}:5000/demo'
+          publish_s3: http://{{ hosting_config.management.net_head_fqdn }}:9000
+          publish_tags:
+          - rocky9
+          registry_opts_pull:
+          - --tls-verify=false
+          registry_opts_push:
+          - --tls-verify=false
+          s3_bucket: boot-images
+          s3_prefix: compute/base/
+        packages:
+        - boxes
+        - cowsay
+        - figlet
+        - fortune-mod
+        - git
+        - nfs-utils
+        - tcpdump
+        - traceroute
+        - vim
+        repos:
+        - alias: Epel9
+          gpg: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9
+          url: https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/
+      compute-debug-rocky9:
+        cmds:
+        - cmd: useradd -m-G testgroup -g wheel -p $1$./2g9mF4$IZGtmXWrih5vj8ruuh4H3.
+        - cmd: groupadd -f wheel
+        - cmd: groupadd -f testgroup
+        options:
+          layer_type: base
+          name: compute-debug
+          parent: '{{ hosting_config.management.net_head_fqdn }}:5000/demo/compute-base:rocky9'
+          pkg_manager: dnf
+          publish_s3: http://{{ hosting_config.management.net_head_fqdn }}:9000
+          publish_tags:
+          - rocky9
+          registry_opts_pull:
+          - --tls-verify=false
+          s3_bucket: boot-images
+          s3_prefix: compute/debug/
+        packages:
+        - shadow-utils
+      rocky-base-9:
+        cmds:
+        - cmd: dracut --add "dmsquash-live livenet network-manager" --kver $(basename
+            /lib/modules/*) -N -f --logfile /tmp/dracut.log 2>/dev/null
+        - cmd: echo DRACUT LOG:; cat /tmp/dracut.log
+        options:
+          layer_type: base
+          name: rocky-base
+          parent: scratch
+          pkg_manager: dnf
+          publish_registry: '{{ hosting_config.management.net_head_fqdn }}:5000/demo'
+          publish_tags: '9'
+          registry_opts_push:
+          - --tls-verify=false
+        package_groups:
+        - Minimal Install
+        - Development Tools
+        packages:
+        - chrony
+        - cloud-init
+        - dracut-live
+        - kernel
+        - rsyslog
+        - sudo
+        - wget
+        repos:
+        - alias: Rocky_9_BaseOS
+          gpg: https://dl.rockylinux.org/pub/rocky/RPM-GPG-KEY-Rocky-9
+          url: https://dl.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/
+        - alias: Rocky_9_AppStream
+          gpg: https://dl.rockylinux.org/pub/rocky/RPM-GPG-KEY-Rocky-9
+          url: https://dl.rockylinux.org/pub/rocky/9/AppStream/x86_64/os/
+    groups:
+      compute-debug-rocky9:
+      - name: testgroup
+      - name: wheel
+    users:
+      compute-debug-rocky9:
+      - name: testuser
+        password: null
+        primary_group: wheel
+        supplementary_groups:
+        - testgroup
+  openchami:
+    url: https://github.com/OpenCHAMI/release.git
+    version: main
+  rie_services:
+    rf-x0c0s3b0:
+      delete: true
+    rf-x0c0s4b0:
+      delete: true
+  testing:
+    enabled: true
+    tests:
+      always-fail:
+        depends_on: []
+        description: 'A test that always fails for use in testing the testing mechanisms
+
+          '
+        enabled: false
+        entrypoint: &id001
+          entrypoint: true
+          mode: '755'
+          path: always_fail/entrypoint.sh
+        files:
+          entrypoint: *id001
+        timeout: 10
+      always-pass:
+        depends_on: []
+        description: 'A test that always passes for use in testing the testing mechanisms
+
+          '
+        enabled: false
+        entrypoint: &id002
+          entrypoint: true
+          mode: '755'
+          path: always_pass/entrypoint.sh
+        files:
+          entrypoint: *id002
+        timeout: 10
+      always-time-out:
+        depends_on: []
+        description: 'A test that always times out for testing the test timeout  mechanism
+
+          '
+        enabled: false
+        entrypoint: &id003
+          entrypoint: true
+          mode: '755'
+          path: always_time_out/entrypoint.sh
+        files:
+          entrypoint: *id003
+        timeout: 2
+      compute-node-ssh:
+        depends_on: []
+        description: 'A simple test that waits for the compute nodes configured
+
+          within the OpenCHAMI cluster to become available and then
+
+          verifies that each one can be reached from the ''rocky'' user on
+
+          the management (head) node using SSH.
+
+          '
+        enabled: true
+        entrypoint: &id004
+          entrypoint: true
+          mode: '755'
+          path: compute_node_ssh/entrypoint.sh
+        files:
+          entrypoint: *id004
+        timeout: 600
+cluster:
+  host_blade_network: &id005
+    address_families:
+      ipv4:
+        cidr: 10.234.0.0/16
+        connected_blades:
+        - addresses:
+          - 10.234.0.1
+          blade_class: host-blade
+          dhcp_server_instance: null
+        - addresses: []
+          blade_class: compute-blade
+          dhcp_server_instance: null
+        dhcp: {}
+        family: AF_INET
+        gateway: null
+        name_servers:
+        - 169.254.169.254
+      link:
+        connected_blades:
+        - addresses:
+          - 52:54:00:71:d8:29
+          blade_class: host-blade
+        - addresses: []
+          blade_class: compute-blade
+        family: AF_PACKET
+    blade_interconnect: null
+    blade_local: true
+    connected_blades:
+    - blade_class: host-blade
+      blade_instances:
+      - 0
+    - blade_class: compute-blade
+      blade_instances: []
+    delete: false
+    devices:
+      bridge: br-bladenet
+      layer2: bladenet
+      local:
+        interface: bl-bladenet
+        peer: bl-bladenet-p
+    endpoint_ips: []
+    network_name: bladenet
+    non_cluster: true
+    tunnel_id: None
+  networks:
+    bladenet: *id005
+    compute_network:
+      address_families:
+        ipv4:
+          cidr: 10.2.1.0/24
+          connected_blades:
+          - addresses:
+            - 10.2.1.1
+            blade_class: host-blade
+            dhcp_server_instance: 0
+          dhcp:
+            enabled: false
+            pools:
+            - end: 10.2.1.254
+              start: 10.2.1.32
+          family: AF_INET
+          gateway: null
+          name_servers: []
+        link:
+          connected_blades:
+          - addresses:
+            - 52:54:00:89:3a:72
+            blade_class: host-blade
+          family: AF_PACKET
+      application_metadata:
+        cluster_network: true
+        coredhcp:
+          pool:
+            end: 10.2.1.254
+            start: 10.2.1.32
+      blade_interconnect: blade-interconnect
+      connected_blades:
+      - blade_class: host-blade
+        blade_instances:
+        - 0
+      devices:
+        bridge: br-compnet
+        local:
+          interface: bl-compnet
+          peer: bl-compnet-p
+        tunnel: compnet
+      endpoint_ips:
+      - 10.255.1.1
+      network_name: compnet
+      tunnel_id: 20
+    hardware_network:
+      address_families:
+        ipv4:
+          cidr: 10.3.1.0/24
+          connected_blades:
+          - addresses:
+            - 10.3.1.1
+            - 10.3.1.2
+            - 10.3.1.3
+            - 10.3.1.4
+            - 10.3.1.5
+            - 10.3.1.6
+            - 10.3.1.7
+            - 10.3.1.8
+            - 10.3.1.9
+            - 10.3.1.10
+            - 10.3.1.11
+            - 10.3.1.12
+            - 10.3.1.13
+            - 10.3.1.14
+            - 10.3.1.15
+            - 10.3.1.16
+            blade_class: host-blade
+            dhcp_server_instance: 0
+          dhcp:
+            enabled: false
+            pools:
+            - end: 10.3.1.254
+              start: 10.3.1.64
+          family: AF_INET
+          gateway: null
+          name_servers: []
+        link:
+          connected_blades:
+          - addresses:
+            - 52:54:00:27:33:2a
+            - 52:54:00:5f:35:ef
+            - 52:54:00:31:28:fb
+            - 52:54:00:09:d8:03
+            - 52:54:00:d8:26:1b
+            - 52:54:00:2c:75:54
+            - 52:54:00:b4:bf:10
+            - 52:54:00:0b:d3:e7
+            - 52:54:00:37:4f:35
+            - 52:54:00:6d:30:64
+            - 52:54:00:c7:32:a6
+            - 52:54:00:44:ce:c9
+            - 52:54:00:02:46:be
+            - 52:54:00:ca:a2:c3
+            - 52:54:00:f3:c5:81
+            - 52:54:00:70:bd:df
+            blade_class: host-blade
+          family: AF_PACKET
+      blade_interconnect: blade-interconnect
+      connected_blades:
+      - blade_class: host-blade
+        blade_instances:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+      devices:
+        bridge: br-hwmgtnet
+        local:
+          interface: bl-hwmgtnet
+          peer: bl-hwmgtnet-p
+        tunnel: hwmgtnet
+      endpoint_ips:
+      - 10.255.1.1
+      network_name: hwmgtnet
+      tunnel_id: 30
+    management_network:
+      address_families:
+        ipv4:
+          cidr: 10.1.1.0/24
+          connected_blades:
+          - addresses:
+            - 10.1.1.1
+            blade_class: host-blade
+            dhcp_server_instance: 0
+          dhcp:
+            enabled: false
+            pools:
+            - end: 10.1.1.254
+              start: 10.1.1.64
+          family: AF_INET
+          gateway: 10.1.1.1
+        link:
+          connected_blades:
+          - addresses:
+            - 52:54:00:f1:4e:a7
+            blade_class: host-blade
+          family: AF_PACKET
+      application_metadata:
+        management_network: true
+      blade_interconnect: blade-interconnect
+      connected_blades:
+      - blade_class: host-blade
+        blade_instances:
+        - 0
+      devices:
+        bridge: br-mgmtnet
+        local:
+          interface: bl-mgmtnet
+          peer: bl-mgmtnet-p
+        tunnel: mgmtnet
+      endpoint_ips:
+      - 10.255.1.1
+      network_name: mgmtnet
+      tunnel_id: 10
+  node_classes:
+    compute_node:
+      application_metadata:
+        node_group: compute
+        node_role: managed
+      distro:
+        family: RedHat
+      host_blade:
+        blade_class: host-blade
+        instance_capacity: 4
+      host_naming:
+        base_name: compute
+        hostnames:
+        - compute-001
+        - compute-002
+        - compute-003
+        - compute-004
+      network_interfaces:
+        bladenet:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.234.0.3
+              - 10.234.0.4
+              - 10.234.0.5
+              - 10.234.0.6
+              family: AF_INET
+              hostname_suffix: -host-blade
+              mode: static
+            layer_2:
+              addresses:
+              - 52:54:00:c2:85:21
+              - 52:54:00:1d:88:23
+              - 52:54:00:cc:fa:c0
+              - 52:54:00:0c:0d:9e
+              family: AF_PACKET
+          cluster_network: bladenet
+          delete: false
+        compute_network:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.2.1.32
+              - 10.2.1.33
+              - 10.2.1.34
+              - 10.2.1.35
+              - 10.2.1.36
+              - 10.2.1.37
+              - 10.2.1.38
+              - 10.2.1.39
+              - 10.2.1.40
+              - 10.2.1.41
+              - 10.2.1.42
+              - 10.2.1.43
+              - 10.2.1.44
+              - 10.2.1.45
+              - 10.2.1.46
+              - 10.2.1.47
+              family: AF_INET
+              mode: reserved
+            layer_2:
+              addresses:
+              - 52:54:00:84:14:97
+              - 52:54:00:c1:d0:49
+              - '52:54:00:32:14:50'
+              - 52:54:00:4a:aa:be
+              family: AF_PACKET
+          cluster_network: compnet
+      node_count: 4
+      node_naming:
+        base_name: compute
+        node_names:
+        - x2000c0s0b0n0
+        - x2000c0s0b0n1
+        - x2000c0s0b0n2
+        - x2000c0s0b0n3
+      parent_class: null
+      pure_base_class: false
+      virtual_machine:
+        additional_disks: {}
+        architecture: null
+        boot_disk: &id010
+          installer:
+            config: {}
+            style: null
+          media_type: null
+        boot_info:
+          boot_menu: &id006
+            enabled: 'no'
+            timeout: '60000'
+          dev: network
+          firmware: ''
+          interfaces:
+          - compute_network
+          loader:
+            path: /usr/share/OVMF/OVMF_CODE.secboot.fd
+            readonly: 'yes'
+            secure: 'no'
+            type: pflash
+          nvram:
+            template: /usr/share/OVMF/OVMF_VARS.fd
+            template_format: ''
+          start_on_creation: 'no'
+        cpu_count: 1
+        memory_size_mib: 4192
+    management_node:
+      application_metadata:
+        node_role: management
+      distro:
+        family: RedHat
+      host_blade:
+        blade_class: host-blade
+        instance_capacity: 1
+      host_naming:
+        base_name: management
+        hostnames:
+        - management-001
+      network_interfaces:
+        bladenet:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.234.0.2
+              family: AF_INET
+              hostname_suffix: -host-blade
+              mode: static
+            layer_2:
+              addresses:
+              - 52:54:00:29:01:bd
+              family: AF_PACKET
+          cluster_network: bladenet
+          delete: false
+        compute_network:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.2.1.2
+              - 10.2.1.3
+              - 10.2.1.4
+              - 10.2.1.5
+              - 10.2.1.6
+              - 10.2.1.7
+              - 10.2.1.8
+              - 10.2.1.9
+              family: AF_INET
+              mode: static
+            layer_2:
+              addresses:
+              - 52:54:00:f6:f5:04
+              family: AF_PACKET
+          cluster_network: compnet
+        hardware_network:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.3.1.24
+              - 10.3.1.25
+              - 10.3.1.26
+              - 10.3.1.27
+              - 10.3.1.28
+              - 10.3.1.29
+              - 10.3.1.30
+              - 10.3.1.31
+              family: AF_INET
+              mode: static
+            layer_2:
+              addresses:
+              - 52:54:00:50:cd:7c
+              family: AF_PACKET
+          cluster_network: hwmgtnet
+        management_network:
+          addr_info:
+            ipv4:
+              addresses:
+              - 10.1.1.2
+              - 10.1.1.3
+              - 10.1.1.4
+              - 10.1.1.5
+              - 10.1.1.6
+              - 10.1.1.7
+              - 10.1.1.8
+              - 10.1.1.9
+              family: AF_INET
+              mode: static
+            layer_2:
+              addresses:
+              - 52:54:00:cd:00:c1
+              family: AF_PACKET
+          cluster_network: mgmtnet
+      node_count: 1
+      node_naming:
+        base_name: management
+        node_names:
+        - x2000c0s0b0n4
+      parent_class: null
+      pure_base_class: false
+      virtual_machine:
+        additional_disks: {}
+        architecture: null
+        boot_disk:
+          disk_size_mb: 50000
+          installer:
+            config:
+              packages: &id007
+              - '@headless-management'
+              - '@legacy-unix'
+              - '@network-server'
+              - '@standard'
+              - '@system-tools'
+              - kexec-tools
+              repos: &id008
+                base:
+                  method: cdrom
+                extra:
+                - base_url: https://download.rockylinux.org/pub/rocky/9/devel/x86_64/os/
+                  name: Devel
+            style: kickstart
+          media_type: iso
+          source_checksum:
+            algorithm: SHA256
+            url: 'https://dl.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9-latest-x86_64-minimal.iso.CHECKSUM
+
+              '
+          source_image: https://dl.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9-latest-x86_64-minimal.iso
+          target_device: vda
+        boot_info: &id009
+          boot_menu: *id006
+          dev: hd
+          firmware: ''
+          interfaces: []
+          loader: {}
+          nvram: {}
+          start_on_creation: 'yes'
+        cpu_count: 4
+        memory_size_mib: 8192
+    rocky_linux_node:
+      distro:
+        family: RedHat
+      parent_class: ubuntu_24_04_node
+      pure_base_class: true
+      virtual_machine:
+        boot_disk:
+          installer:
+            config:
+              packages: *id007
+              repos: *id008
+            style: kickstart
+          media_type: iso
+          source_checksum:
+            algorithm: SHA256
+            url: 'https://dl.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9-latest-x86_64-minimal.iso.CHECKSUM
+
+              '
+          source_image: https://dl.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9-latest-x86_64-minimal.iso
+    rocky_net_boot:
+      distro:
+        family: RedHat
+      parent_class: ubuntu_net_boot
+      pure_base_class: true
+    ubuntu_24_04_node:
+      application_metadata: {}
+      distro:
+        family: Debian
+      host_blade:
+        blade_class: base-blade
+        instance_capacity: 1
+      host_naming: {}
+      network_interfaces:
+        my_network:
+          addr_info:
+            ipv4:
+              addresses: []
+              family: AF_INET
+              hostname_suffix: -mynet
+              mode: reserved
+            layer_2:
+              addresses: []
+              family: AF_PACKET
+          cluster_network: examplenet
+          delete: true
+      node_count: 0
+      node_naming:
+        base_name: ubuntu-node
+        node_names: []
+      parent_class: null
+      pure_base_class: true
+      virtual_machine:
+        additional_disks:
+          first_scratch_disk:
+            delete: true
+            disk_size_mb: 50000
+            media_type: qcow2
+            partitions:
+              whole_disk:
+                delete: false
+                fs_type: ext4
+                partition_number: 0
+                partition_size_gb: null
+            source_checksum: null
+            source_checksum_algorithm: SHA256
+            source_image: null
+            target_device: vdb
+        architecture: null
+        boot_disk:
+          disk_size_mb: 50000
+          installer:
+            config: {}
+            style: virt-customize
+          media_type: qcow2
+          source_checksum:
+            algorithm: SHA256
+            url: http://cloud-images.ubuntu.com/focal/current/SHA256SUMS
+          source_image: http://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+          target_device: vda
+        boot_info: *id009
+        cpu_count: 1
+        memory_size_mib: 4192
+    ubuntu_net_boot:
+      parent_class: ubuntu_24_04_node
+      pure_base_class: true
+      virtual_machine:
+        boot_disk:
+          __replace_dict: *id010
+        boot_info:
+          dev: network
+          firmware: ''
+          interfaces:
+          - my_network
+          loader:
+            path: /usr/share/OVMF/OVMF_CODE.secboot.fd
+            readonly: 'yes'
+            secure: 'no'
+            type: pflash
+          nvram:
+            template: /usr/share/OVMF/OVMF_VARS.fd
+            template_format: ''
+          start_on_creation: 'no'
+core:
+  configurations:
+  - metadata:
+      path: layers/provider/gcp/provider-gcp-hpe-org.yaml
+      repo: http://github.com/Cray-HPE/vtds-configs.git
+      version: main
+    type: git
+  - metadata:
+      path: layers/provider/gcp/provider-gcp-openChami.yaml
+      repo: http://github.com/Cray-HPE/vtds-configs.git
+      version: main
+    type: git
+  - metadata:
+      path: layers/platform/ubuntu/platform-ubuntu-openChami.yaml
+      repo: http://github.com/Cray-HPE/vtds-configs.git
+      version: main
+    type: git
+  - metadata:
+      path: layers/cluster/kvm/cluster-kvm-openChami.yaml
+      repo: http://github.com/Cray-HPE/vtds-configs.git
+      version: main
+    type: git
+  - metadata:
+      path: layers/application/ubuntu/application-ubuntu-openChami.yaml
+      repo: http://github.com/Cray-HPE/vtds-configs.git
+      version: main
+    type: git
+  - metadata: {}
+    type: command-line
+  - metadata: {}
+    type: core-config
+  layers:
+    application:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-application-openchami.git
+        version: main
+      module: vtds_application_openchami
+      package: vtds-application-openchami
+      source_type: git
+    base:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-base.git
+        version: main
+      module: vtds_base
+      package: vtds-base
+      source_type: git
+    cluster:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-cluster-kvm.git
+        version: main
+      module: vtds_cluster_kvm
+      package: vtds-cluster-kvm
+      source_type: git
+    core:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-core.git
+        version: main
+      module: vtds_core
+      package: vtds-core
+      source_type: git
+    platform:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-platform-ubuntu.git
+        version: main
+      module: vtds_platform_ubuntu
+      package: vtds-platform-ubuntu
+      source_type: git
+    provider:
+      metadata:
+        url: http://github.com/Cray-HPE/vtds-provider-gcp.git
+        version: main
+      module: vtds_provider_gcp
+      package: vtds-provider-gcp
+      source_type: git
+platform:
+  packages:
+    dhcp:
+      blade_classes: null
+      packages:
+      - kea
+      preconfig_settings:
+      - kea-ctrl-agent kea-ctrl-agent/make_a_choice select configured_random_password
+      services_disable:
+      - kea-dhcp4-server
+      - kea-dhcp6-server
+      - kea-dhcp-ddns-server
+      - kea-ctrl-agent
+      services_enable: []
+    miscelaneous_tools:
+      blade_classes: null
+      packages:
+      - iputils-ping
+      - dnsutils
+      - emacs
+      - vim
+      preconfig_settings:
+      - postfix postfix/main_mailer_type select No configuration
+      services_disable: []
+      services_enable: []
+    nat_support:
+      blade_classes: null
+      packages:
+      - nftables
+      preconfig_settings: []
+      services_disable: []
+      services_enable: []
+    network_virtualization:
+      blade_classes: null
+      packages:
+      - bridge-utils
+      preconfig_settings: []
+      services_disable: []
+      services_enable: []
+    node_virtualization:
+      blade_classes: null
+      packages:
+      - libvirt-daemon-system
+      - virtinst
+      - qemu-kvm
+      - libvirt-clients
+      - libguestfs-tools
+      - python3-libvirt
+      - mkisofs
+      - libvirt-dev
+      - apache2-utils
+      preconfig_settings: []
+      services_disable: []
+      services_enable:
+      - libvirtd
+    openchami_dns_support:
+      blade_classes: null
+      packages:
+      - dnsmasq
+      preconfig_settings: []
+      services_disable:
+      - dnsmasq
+      services_enable: []
+    python:
+      blade_classes: null
+      packages:
+      - python3.10
+      preconfig_settings: []
+      services_disable: []
+      services_enable: []
+    python_module_installation:
+      blade_classes: null
+      packages:
+      - python3-pip
+      - python3.10-venv
+      - git
+      preconfig_settings: []
+      services_disable: []
+      services_enable: []
+    sushy_emulator_support:
+      blade_classes: null
+      packages:
+      - libvirt-dev
+      - apache2-utils
+      - nginx
+      preconfig_settings: []
+      services_disable:
+      - nginx
+      services_enable: []
+  python:
+    blade_venv_path: /root/blade-venv
+    modules:
+      libvirt-python:
+        delete: false
+        metadata:
+          version: null
+        module_name: libvirt-python
+        source_type: pypi
+      sushi-tools:
+        delete: false
+        metadata:
+          url: https://github.com/Cray-HPE/sushy-tools-vshasta-v3.git
+          version: With-Libvirt-By-Name
+        module_name: sushy-tools
+        source_type: git
+      yaml:
+        delete: false
+        metadata:
+          version: null
+        module_name: pyyaml
+        source_type: pypi
+provider:
+  blade_interconnects:
+    base-interconnect:
+      application_metadata: &id011 {}
+      description: 'Default blade interconnect based on the ''base-interconnect''
+        interconnect
+
+        class definition.
+
+        '
+      enable_ipv6_ula: false
+      firewall: &id012
+        egress_rules:
+          unrestricted_external_egress:
+            allow:
+            - ports: []
+              protocol: all
+            delete: false
+            deny: []
+            description: allow egress from anywhere inside to anywhere outside
+            destination_ranges:
+            - 0.0.0.0/0
+            disabled: false
+            log_config: null
+            name: unrestricted-external-egress
+            priority: 100
+            source_ranges:
+            - 0.0.0.0/0
+            source_service_accounts: null
+            source_tags: null
+            target_service_accounts: null
+            target_tags: null
+        ingress_rules:
+          iap_ssh_ingress:
+            allow:
+            - ports:
+              - '22'
+              protocol: tcp
+            delete: false
+            deny: []
+            description: allow SSH ingress from GCP's Identity Aware Proxy (IAP)
+            destination_ranges: null
+            disabled: false
+            log_config: null
+            name: iap-ssh-ingress
+            priority: 100
+            source_ranges:
+            - 35.235.240.0/20
+            source_service_accounts: null
+            source_tags: null
+            target_service_accounts: null
+            target_tags: null
+          other_ingress:
+            allow:
+            - ports:
+              - '22'
+              protocol: tcp
+            - ports:
+              - '4789'
+              protocol: udp
+            - ports: []
+              protocol: icmp
+            delete: false
+            deny: []
+            description: 'allow SSH, VxLAN and ICMP ingress from any host on the blade
+
+              interconnect subnet.
+
+              '
+            destination_ranges: null
+            disabled: false
+            log_config: null
+            name: other-ingress
+            priority: 100
+            source_ranges:
+            - 10.255.0.0/16
+            source_service_accounts: null
+            source_tags: null
+            target_service_accounts: null
+            target_tags: null
+      flow_logs: 'false'
+      flow_logs_filter: 'true'
+      flow_logs_interval: INTERVAL_5_SEC
+      flow_logs_metadata: INCLUDE_ALL_METADATA
+      flow_logs_metadata_fields: &id013 []
+      flow_logs_sampling: '0.5'
+      internal_ipv6_range: ''
+      ipv4_cidr: 10.255.0.0/16
+      ipv6_access_type: null
+      mtu: 0
+      network_firewall_policy_enforcement_order: null
+      network_name: base-interconnect
+      parent_class: null
+      private_access: 'true'
+      private_ipv6_access: null
+      pure_base_class: true
+      role: null
+      routes:
+      - description: Placeholder for a route, override this
+        destination_range: 0.0.0.0/0
+        name: base-route
+        next_hop_internet: false
+        next_hop_ip: 1.2.3.4
+        priority: '1000'
+        tags: base-route-tag
+      routing_mode: GLOBAL
+      stack_type: null
+    blade-interconnect:
+      application_metadata: *id011
+      description: 'A blade interconnect based on ''base interconnect'' to facilitate
+        testing
+
+        of blade interconnect inheritance.
+
+        '
+      enable_ipv6_ula: false
+      firewall: *id012
+      flow_logs: 'false'
+      flow_logs_filter: 'true'
+      flow_logs_interval: INTERVAL_5_SEC
+      flow_logs_metadata: INCLUDE_ALL_METADATA
+      flow_logs_metadata_fields: *id013
+      flow_logs_sampling: '0.5'
+      internal_ipv6_range: ''
+      ipv4_cidr: 10.255.0.0/16
+      ipv6_access_type: null
+      mtu: 0
+      network_firewall_policy_enforcement_order: null
+      network_name: blade-interconnect
+      parent_class: null
+      private_access: 'true'
+      private_ipv6_access: null
+      pure_base_class: false
+      role: null
+      routes: []
+      routing_mode: GLOBAL
+      stack_type: null
+  commands:
+    gcloud: gcloud
+    terragrunt: terragrunt
+  organization:
+    billing_account: 01C2AB-21F156-585470
+    name: hpe
+    org_id: organizations/980209705768
+    parent: organizations/980209705768
+    seed_project: hpe-dev-seed
+    trusted_cidrs:
+    - 136.162.34.1/32
+  project:
+    activate_apis_default:
+    - admin.googleapis.com
+    - cloudbilling.googleapis.com
+    - cloudresourcemanager.googleapis.com
+    - iam.googleapis.com
+    - serviceusage.googleapis.com
+    - secretmanager.googleapis.com
+    activate_service_identities: []
+    auto_create_network: false
+    base_name: ochamitest-4a8ef2f837
+    bucket_force_destroy: true
+    bucket_labels: {}
+    bucket_location: null
+    bucket_name: null
+    bucket_pap: inherited
+    bucket_project: null
+    bucket_ula: true
+    bucket_versioning: false
+    consumer_quotas: null
+    create_project_sa: true
+    default_network_tier: null
+    deletion_policy: DELETE
+    folder_id: '525773635451'
+    gcloud_skip_download: true
+    group_name: vshasta2-owners
+    group_role: roles/owner
+    labels:
+      terraform: 'true'
+    location: US
+    orgpolicies_skip_execution: false
+    random_project_id: true
+    region: us-central1
+    trusted_cidrs: []
+    zone: us-central1-a
+  secrets:
+    blade_ssh_key:
+      annotations:
+        layer: provider
+      application_metadata: {}
+      labels: {}
+      name: blade-ssh-key
+  terragrunt:
+    terraform_dummy_version: latest
+    terraform_version: 1.9.7
+    terragrunt_dummy_version: latest
+    terragrunt_version: 0.68.1
+  virtual_blades:
+    base-blade:
+      access_config: &id014
+      - nat_ip: ''
+        network_tier: PREMIUM
+      add_hostname_suffix: true
+      application_metadata: {}
+      availability: &id015
+        automatic_restart: false
+        on_host_maintenance: MIGRATE
+        preemptible: false
+        spot: false
+        spot_instance_termination_action: STOP
+      blade_interconnect:
+        additional_networks: &id016 []
+        ip_addrs: []
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: base-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 0
+      gpu: null
+      hostname: base
+      hostname_suffix_separator: '-'
+      ipv6_access_config: &id017 []
+      labels: &id018 {}
+      metadata: &id019
+        metadata:
+          serial-port-enable: 'true'
+        startup_script: ''
+      name_prefix: base
+      parent_class: null
+      pure_base_class: true
+      resource_policies: &id020 []
+      security: &id021
+        enable_confidential_vm: false
+        enable_shielded_vm: false
+        shielded_instance_config:
+          enable_integrity_monitoring: true
+          enable_secure_boot: true
+          enable_vtpm: true
+      service_account_iam: &id022
+        billing: []
+        cluster_project: []
+        clusters_folder: []
+        image_source: []
+        organization: []
+        seed_project: []
+      ssh_key_secret: blade-ssh-key
+      tags: &id023 []
+      vm:
+        additional_disks: &id024
+        - auto_delete: true
+          boot: false
+          device_name: sdb
+          disk_labels: {}
+          disk_name: null
+          disk_size_gb: 1024
+          disk_type: pd-standard
+          source_snapshot: null
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: &id025 {}
+          disk_size_gb: 10
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-4
+        min_cpu_platform: ''
+        threads_per_core: 1
+    compute-blade:
+      access_config: *id014
+      add_hostname_suffix: true
+      application_metadata:
+        xnames:
+        - x4000c0s0b0
+        - x4000c0s0b1
+        - x4000c0s0b2
+        - x4000c0s0b3
+        - x4000c0s1b0
+        - x4000c0s1b1
+        - x4000c0s1b2
+        - x4000c0s1b3
+        - x4000c0s2b0
+        - x4000c0s2b1
+        - x4000c0s2b2
+        - x4000c0s2b3
+        - x4000c0s3b0
+        - x4000c0s3b1
+        - x4000c0s3b2
+        - x4000c0s3b3
+      availability: *id015
+      blade_interconnect:
+        additional_networks: *id016
+        ip_addrs:
+        - 10.255.1.1
+        - 10.255.1.2
+        - 10.255.1.3
+        - 10.255.1.4
+        - 10.255.1.5
+        - 10.255.1.6
+        - 10.255.1.7
+        - 10.255.1.8
+        - 10.255.1.9
+        - 10.255.1.10
+        - 10.255.1.11
+        - 10.255.1.12
+        - 10.255.1.13
+        - 10.255.1.14
+        - 10.255.1.15
+        - 10.255.1.16
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: blade-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 0
+      gpu: null
+      hostname: compute-blade
+      hostname_suffix_separator: '-'
+      ipv6_access_config: *id017
+      labels: *id018
+      metadata: *id019
+      name_prefix: compute-blade
+      parent_class: null
+      pure_base_class: false
+      resource_policies: *id020
+      security: *id021
+      service_account_iam: *id022
+      ssh_key_secret: blade-ssh-key
+      tags: *id023
+      vm:
+        additional_disks: *id024
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: *id025
+          disk_size_gb: 1000
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-16
+        min_cpu_platform: ''
+        threads_per_core: 1
+    host-blade:
+      access_config: *id014
+      add_hostname_suffix: true
+      application_metadata:
+        xnames:
+        - x2000c0s0b0
+        - x2000c0s0b1
+        - x2000c0s0b2
+        - x2000c0s0b3
+        - x2000c0s1b0
+        - x2000c0s1b1
+        - x2000c0s1b2
+        - x2000c0s1b3
+        - x2000c0s2b0
+        - x2000c0s2b1
+        - x2000c0s2b2
+        - x2000c0s2b3
+        - x2000c0s3b0
+        - x2000c0s3b1
+        - x2000c0s3b2
+        - x2000c0s3b3
+      availability: *id015
+      blade_interconnect:
+        additional_networks: *id016
+        ip_addrs:
+        - 10.255.1.1
+        - 10.255.1.2
+        - 10.255.1.3
+        - 10.255.1.4
+        - 10.255.1.5
+        - 10.255.1.6
+        - 10.255.1.7
+        - 10.255.1.8
+        - 10.255.1.9
+        - 10.255.1.10
+        - 10.255.1.11
+        - 10.255.1.12
+        - 10.255.1.13
+        - 10.255.1.14
+        - 10.255.1.15
+        - 10.255.1.16
+        network: ''
+        nic_type: null
+        stack_type: null
+        subnetwork: blade-interconnect
+        total_egress_bandwidth_tier: DEFAULT
+      can_ip_forward: true
+      count: 1
+      gpu: null
+      hostname: host-blade
+      hostname_suffix_separator: '-'
+      ipv6_access_config: *id017
+      labels: *id018
+      metadata: *id019
+      name_prefix: host-blade
+      parent_class: null
+      pure_base_class: false
+      resource_policies: *id020
+      security: *id021
+      service_account_iam: *id022
+      ssh_key_secret: blade-ssh-key
+      tags: *id023
+      vm:
+        additional_disks: *id024
+        boot_disk:
+          auto_delete: true
+          disk_encryption_key: ''
+          disk_labels: *id025
+          disk_size_gb: 1000
+          disk_type: pd-standard
+          source_image: ''
+          source_image_family: ubuntu-minimal-2204-jammy-v20241115
+          source_image_private: false
+          source_image_project: ubuntu-os-cloud
+        enable_nested_virtualization: true
+        machine_type: n1-standard-16
+        min_cpu_platform: ''
+        threads_per_core: 1
+
