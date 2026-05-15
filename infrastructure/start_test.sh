@@ -39,7 +39,7 @@ mkdir -p ~/.ssh
 touch ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 gcloud secrets versions access latest \
-       --secret="github-deploy-key" > ~/.ssh/id_rsa
+       --secret="${GITHUB_KEY_SECRET_NAME}" > ~/.ssh/id_rsa
 
 # Clone the repository so we have access to the infrastructure needed
 # to start testing
