@@ -25,9 +25,9 @@ function image_tag() {
     echo "${OPENCHAMI_VERSION}" | md5sum | cut -c 1-10
 }
 
-: "${TEST_REPO_URL:="git@github.com:davidfluck-hpe/openchami-vtds.git"}"
+: "${TEST_REPO_URL:="git@github.com:Cray-HPE/openchami-vtds.git"}"
 : "${TEST_REPO_TREE:="$(pwd)/openchami-vtds"}"
-: "${GITHUB_KEY_SECRET_NAME:="github-df-deploy-key"}"
+: "${GITHUB_KEY_SECRET_NAME:="github-deploy-key"}"
 : "${OPENCHAMI_VERSION:="main"}"  # This should be in the environment
 : "${CONTAINER_IMAGE_TAG:="$(image_tag)"}"
 export OPENCHAMI_VERSION
