@@ -115,7 +115,7 @@ provider:
     terraform_dummy_version: latest
     terragrunt_dummy_version: latest
   project:
-    base_name: ochamitest-%%TEST_CLUSTER_NAME%%
+    base_name: ochamitest-43c0d380e0
   virtual_blades:
     host-blade:
       # A count of 1 is sufficient to build a system on a single blade
@@ -154,6 +154,6 @@ application:
     rf-x0c0s4b0:
       delete: true
   openchami:
-    version: %%OPENCHAMI_VERSION%%  # The openchami version under test
+    version: main  # The openchami version under test
   testing:
     enabled: true
