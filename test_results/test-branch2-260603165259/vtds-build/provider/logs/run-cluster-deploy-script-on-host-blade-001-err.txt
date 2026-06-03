@@ -1,0 +1,710 @@
+error: failed to get domain 'x2000c0s0b0n0'
+error: failed to get domain 'x2000c0s0b0n0'
+error: failed to get domain 'x2000c0s0b0n1'
+error: failed to get domain 'x2000c0s0b0n1'
+error: failed to get domain 'x2000c0s0b0n2'
+error: failed to get domain 'x2000c0s0b0n2'
+error: failed to get domain 'x2000c0s0b0n3'
+error: failed to get domain 'x2000c0s0b0n3'
+error: failed to get domain 'x2000c0s0b0n4'
+error: failed to get domain 'x2000c0s0b0n4'
+INFO: retrieving disk image 'https://dl.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9-latest-x86_64-minimal.iso' as '/var/local/vtds/management_node/boot-img-source.iso'
+I: -input-charset not specified, using utf-8 (detected in locale settings)
+Using RPM_G000.;1 for  /RPM-GPG-KEY-Rocky-9 (RPM-GPG-KEY-Rocky-9-Testing)
+Using NEWT_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/newt-0.52.21-11.el9.i686.rpm (newt-0.52.21-11.el9.x86_64.rpm)
+Using NCURS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/ncurses-base-6.2-12.20210508.el9.noarch.rpm (ncurses-6.2-12.20210508.el9.x86_64.rpm)
+Using NETWO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-libnm-1.54.3-2.el9.x86_64.rpm (NetworkManager-bluetooth-1.54.3-2.el9.x86_64.rpm)
+Using NETWO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-bluetooth-1.54.3-2.el9.x86_64.rpm (NetworkManager-wwan-1.54.3-2.el9.x86_64.rpm)
+Using NETWO002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-wwan-1.54.3-2.el9.x86_64.rpm (NetworkManager-config-server-1.54.3-2.el9.noarch.rpm)
+Using NSS_S000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/nss-softokn-freebl-3.112.0-8.el9.x86_64.rpm (nss-softokn-3.112.0-8.el9.x86_64.rpm)
+Using NCURS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/ncurses-6.2-12.20210508.el9.x86_64.rpm (ncurses-libs-6.2-12.20210508.el9.x86_64.rpm)
+Using NETWO003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-config-server-1.54.3-2.el9.noarch.rpm (NetworkManager-wifi-1.54.3-2.el9.x86_64.rpm)
+Using NETWO004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-wifi-1.54.3-2.el9.x86_64.rpm (NetworkManager-team-1.54.3-2.el9.x86_64.rpm)
+Using NCURS002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/ncurses-libs-6.2-12.20210508.el9.x86_64.rpm (ncurses-libs-6.2-12.20210508.el9.i686.rpm)
+Using NETWO005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-team-1.54.3-2.el9.x86_64.rpm (NetworkManager-libnm-1.54.3-2.el9.i686.rpm)
+Using NETWO006.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-libnm-1.54.3-2.el9.i686.rpm (NetworkManager-adsl-1.54.3-2.el9.x86_64.rpm)
+Using NFTAB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/nftables-1.0.9-6.el9_7.x86_64.rpm (nftables-1.0.9-6.el9_7.i686.rpm)
+Using NETTL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/nettle-3.10.1-1.el9.i686.rpm (nettle-3.10.1-1.el9.x86_64.rpm)
+Using NETWO007.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-adsl-1.54.3-2.el9.x86_64.rpm (NetworkManager-1.54.3-2.el9.x86_64.rpm)
+Using NUMAC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/numactl-libs-2.0.19-3.el9.x86_64.rpm (numactl-libs-2.0.19-3.el9.i686.rpm)
+Using NETWO008.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/NetworkManager-1.54.3-2.el9.x86_64.rpm (NetworkManager-tui-1.54.3-2.el9.x86_64.rpm)
+Using NUMAC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/numactl-libs-2.0.19-3.el9.i686.rpm (numactl-2.0.19-3.el9.x86_64.rpm)
+Using NPTH_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/n/npth-1.6-8.el9.x86_64.rpm (npth-1.6-8.el9.i686.rpm)
+Using SAMBA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/samba-common-libs-4.23.5-6.el9.i686.rpm (samba-common-4.23.5-6.el9.noarch.rpm)
+Using SSSD_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sssd-krb5-2.9.8-4.el9_8.x86_64.rpm (sssd-krb5-common-2.9.8-4.el9_8.x86_64.rpm)
+Using SG3_U000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sg3_utils-1.47-10.el9.x86_64.rpm (sg3_utils-libs-1.47-10.el9.i686.rpm)
+Using SYSTE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/systemd-rpm-macros-252-67.el9.rocky.0.1.noarch.rpm (systemd-udev-252-67.el9.rocky.0.1.x86_64.rpm)
+Using SYSTE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/systemd-udev-252-67.el9.rocky.0.1.x86_64.rpm (systemd-libs-252-67.el9.rocky.0.1.x86_64.rpm)
+Using SELIN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/selinux-policy-targeted-38.1.75-2.el9.noarch.rpm (selinux-policy-mls-38.1.75-2.el9.noarch.rpm)
+Using SELIN001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/selinux-policy-mls-38.1.75-2.el9.noarch.rpm (selinux-policy-38.1.75-2.el9.noarch.rpm)
+Using SQLIT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sqlite-libs-3.34.1-9.el9_7.i686.rpm (sqlite-libs-3.34.1-9.el9_7.x86_64.rpm)
+Using SLANG000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/slang-2.3.2-11.el9.x86_64.rpm (slang-2.3.2-11.el9.i686.rpm)
+Using SYSTE002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/systemd-libs-252-67.el9.rocky.0.1.x86_64.rpm (systemd-pam-252-67.el9.rocky.0.1.x86_64.rpm)
+Using SUBSC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/subscription-manager-1.29.50-1.el9.rocky.0.1.x86_64.rpm (subscription-manager-rhsm-certificates-20220623-1.el9.noarch.rpm)
+Using SAMBA001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/samba-common-4.23.5-6.el9.noarch.rpm (samba-common-tools-4.23.5-6.el9.x86_64.rpm)
+Using SYSTE003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/systemd-pam-252-67.el9.rocky.0.1.x86_64.rpm (systemd-252-67.el9.rocky.0.1.x86_64.rpm)
+Using SNAPP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/snappy-1.1.8-8.el9.0.1.i686.rpm (snappy-1.1.8-8.el9.0.1.x86_64.rpm)
+Using SG3_U001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sg3_utils-libs-1.47-10.el9.i686.rpm (sg3_utils-libs-1.47-10.el9.x86_64.rpm)
+Using SYSLI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/syslinux-nonlinux-6.04-0.23.el9.noarch.rpm (syslinux-extlinux-6.04-0.23.el9.x86_64.rpm)
+Using SAMBA002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/samba-common-tools-4.23.5-6.el9.x86_64.rpm (samba-common-libs-4.23.5-6.el9.x86_64.rpm)
+Using SAMBA003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/samba-libs-4.23.5-6.el9.i686.rpm (samba-libs-4.23.5-6.el9.x86_64.rpm)
+Using SYSTE004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/systemd-252-67.el9.rocky.0.1.x86_64.rpm (systemd-libs-252-67.el9.rocky.0.1.i686.rpm)
+Using SAMBA004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/samba-client-libs-4.23.5-6.el9.i686.rpm (samba-client-libs-4.23.5-6.el9.x86_64.rpm)
+Using SSSD_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sssd-client-2.9.8-4.el9_8.i686.rpm (sssd-client-2.9.8-4.el9_8.x86_64.rpm)
+Using SYSLI001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/syslinux-extlinux-6.04-0.23.el9.x86_64.rpm (syslinux-extlinux-nonlinux-6.04-0.23.el9.noarch.rpm)
+Using SYSLI002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/syslinux-extlinux-nonlinux-6.04-0.23.el9.noarch.rpm (syslinux-6.04-0.23.el9.x86_64.rpm)
+Using SSSD_002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/s/sssd-common-pac-2.9.8-4.el9_8.x86_64.rpm (sssd-common-2.9.8-4.el9_8.x86_64.rpm)
+Using COCKP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cockpit-356-1.el9.rocky.0.1.x86_64.rpm (cockpit-ws-selinux-356-1.el9.rocky.0.1.x86_64.rpm)
+Using CRACK000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cracklib-2.9.6-28.el9.x86_64.rpm (cracklib-dicts-2.9.6-28.el9.x86_64.rpm)
+Using CYRUS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-gssapi-2.1.27-22.el9_7.x86_64.rpm (cyrus-sasl-lib-2.1.27-22.el9_7.x86_64.rpm)
+Using CYRUS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-lib-2.1.27-22.el9_7.x86_64.rpm (cyrus-sasl-lib-2.1.27-22.el9_7.i686.rpm)
+Using CRACK001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cracklib-dicts-2.9.6-28.el9.x86_64.rpm (cracklib-2.9.6-28.el9.i686.rpm)
+Using COCKP001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cockpit-ws-selinux-356-1.el9.rocky.0.1.x86_64.rpm (cockpit-bridge-356-1.el9.rocky.0.1.noarch.rpm)
+Using COCKP002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cockpit-bridge-356-1.el9.rocky.0.1.noarch.rpm (cockpit-system-356-1.el9.rocky.0.1.noarch.rpm)
+Using CYRUS002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-lib-2.1.27-22.el9_7.i686.rpm (cyrus-sasl-gssapi-2.1.27-22.el9_7.i686.rpm)
+Using COREU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/coreutils-8.32-40.el9.x86_64.rpm (coreutils-single-8.32-40.el9.x86_64.rpm)
+Using CYRUS003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-gssapi-2.1.27-22.el9_7.i686.rpm (cyrus-sasl-2.1.27-22.el9_7.x86_64.rpm)
+Using C_ARE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/c-ares-1.19.1-2.el9_4.x86_64.rpm (c-ares-1.19.1-2.el9_4.i686.rpm)
+Using CUPS_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cups-libs-2.3.3op2-38.el9_8.x86_64.rpm (cups-libs-2.3.3op2-38.el9_8.i686.rpm)
+Using CRYPT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cryptsetup-2.8.1-3.el9.x86_64.rpm (cryptsetup-libs-2.8.1-3.el9.x86_64.rpm)
+Using COREU001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/coreutils-single-8.32-40.el9.x86_64.rpm (coreutils-common-8.32-40.el9.x86_64.rpm)
+Using COCKP003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cockpit-system-356-1.el9.rocky.0.1.noarch.rpm (cockpit-ws-356-1.el9.rocky.0.1.x86_64.rpm)
+Using CRYPT001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cryptsetup-libs-2.8.1-3.el9.x86_64.rpm (cryptsetup-libs-2.8.1-3.el9.i686.rpm)
+Using COCKP004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cockpit-ws-356-1.el9.rocky.0.1.x86_64.rpm (cockpit-doc-356-1.el9.rocky.0.1.noarch.rpm)
+Using CRYPT002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/crypto-policies-20260224-1.gitea0f072.el9.noarch.rpm (crypto-policies-scripts-20260224-1.gitea0f072.el9.noarch.rpm)
+Using CYRUS004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-2.1.27-22.el9_7.x86_64.rpm (cyrus-sasl-plain-2.1.27-22.el9_7.i686.rpm)
+Using CYRUS005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/c/cyrus-sasl-plain-2.1.27-22.el9_7.i686.rpm (cyrus-sasl-plain-2.1.27-22.el9_7.x86_64.rpm)
+Using GRUB2000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-tools-2.06-126.el9_8.rocky.0.3.x86_64.rpm (grub2-tools-minimal-2.06-126.el9_8.rocky.0.3.x86_64.rpm)
+Using GNUTL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gnutls-dane-3.8.10-3.el9.i686.rpm (gnutls-dane-3.8.10-3.el9.x86_64.rpm)
+Using GLIB2000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/glib2-2.68.4-19.el9_8.1.x86_64.rpm (glib2-2.68.4-19.el9_8.1.i686.rpm)
+Using GRUB2001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-tools-minimal-2.06-126.el9_8.rocky.0.3.x86_64.rpm (grub2-tools-extra-2.06-126.el9_8.rocky.0.3.x86_64.rpm)
+Using GLIBC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/glibc-gconv-extra-2.34-266.el9_8.i686.rpm (glibc-gconv-extra-2.34-266.el9_8.x86_64.rpm)
+Using GRUB2002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-efi-x64-cdboot-2.06-126.el9_8.rocky.0.3.x86_64.rpm (grub2-efi-x64-modules-2.06-126.el9_8.rocky.0.3.noarch.rpm)
+Using GDBM_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gdbm-libs-1.23-1.el9.i686.rpm (gdbm-libs-1.23-1.el9.x86_64.rpm)
+Using GMP_6000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gmp-6.2.0-13.el9.x86_64.rpm (gmp-6.2.0-13.el9.i686.rpm)
+Using GOBJE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gobject-introspection-1.68.0-11.el9.i686.rpm (gobject-introspection-1.68.0-11.el9.x86_64.rpm)
+Using GETTE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gettext-libs-0.21-8.el9.i686.rpm (gettext-0.21-8.el9.x86_64.rpm)
+Using GNUTL001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gnutls-3.8.10-3.el9.i686.rpm (gnutls-3.8.10-3.el9.x86_64.rpm)
+Using GETTE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gettext-0.21-8.el9.x86_64.rpm (gettext-libs-0.21-8.el9.x86_64.rpm)
+Using GRUB2003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-efi-x64-modules-2.06-126.el9_8.rocky.0.3.noarch.rpm (grub2-efi-x64-2.06-126.el9_8.rocky.0.3.x86_64.rpm)
+Using GPGME000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/gpgme-1.15.1-6.el9.x86_64.rpm (gpgme-1.15.1-6.el9.i686.rpm)
+Using GRUB2004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-pc-2.06-126.el9_8.rocky.0.3.x86_64.rpm (grub2-pc-modules-2.06-126.el9_8.rocky.0.3.noarch.rpm)
+Using GLIBC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/glibc-2.34-266.el9_8.i686.rpm (glibc-2.34-266.el9_8.x86_64.rpm)
+Using GRAPH000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/graphite2-1.3.14-9.el9.i686.rpm (graphite2-1.3.14-9.el9.x86_64.rpm)
+Using GRUB2005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/g/grub2-tools-extra-2.06-126.el9_8.rocky.0.3.x86_64.rpm (grub2-tools-efi-2.06-126.el9_8.rocky.0.3.x86_64.rpm)
+Using AVAHI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/avahi-libs-0.8-23.el9.i686.rpm (avahi-libs-0.8-23.el9.x86_64.rpm)
+Using AUTHS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/authselect-libs-1.2.6-3.el9.x86_64.rpm (authselect-1.2.6-3.el9.x86_64.rpm)
+Using ATLAS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/atlas-3.10.3-17.el9.i686.rpm (atlas-3.10.3-17.el9.x86_64.rpm)
+Using AUDIT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/audit-libs-3.1.5-8.el9.x86_64.rpm (audit-libs-3.1.5-8.el9.i686.rpm)
+Using AUTHS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/authselect-1.2.6-3.el9.x86_64.rpm (authselect-libs-1.2.6-3.el9.i686.rpm)
+Using AVAHI001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/a/avahi-0.8-23.el9.x86_64.rpm (avahi-0.8-23.el9.i686.rpm)
+Using IMA_E000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/ima-evm-utils-1.6.2-2.el9.rocky.0.2.i686.rpm (ima-evm-utils-1.6.2-2.el9.rocky.0.2.x86_64.rpm)
+Using IPSET000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/ipset-libs-7.11-11.el9_5.i686.rpm (ipset-libs-7.11-11.el9_5.x86_64.rpm)
+Using INITS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/initscripts-rename-device-10.11.8-4.el9.x86_64.rpm (initscripts-10.11.8-4.el9.x86_64.rpm)
+Using INIH_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/inih-49-6.el9.x86_64.rpm (inih-49-6.el9.i686.rpm)
+Using ISCSI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iscsi-initiator-utils-6.2.1.11-0.git4b3e853.el9.x86_64.rpm (iscsi-initiator-utils-iscsiuio-6.2.1.11-0.git4b3e853.el9.x86_64.rpm)
+Using IWL60000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iwl6000g2a-firmware-18.168.6.1-155.5.el9_7.noarch.rpm (iwl6000g2b-firmware-18.168.6.1-155.5.el9_7.noarch.rpm)
+Using IPTAB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iptables-nft-1.8.10-11.el9_5.x86_64.rpm (iptables-libs-1.8.10-11.el9_5.x86_64.rpm)
+Using ISNS_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/isns-utils-libs-0.101-4.el9.i686.rpm (isns-utils-libs-0.101-4.el9.x86_64.rpm)
+Using INITS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/initscripts-10.11.8-4.el9.x86_64.rpm (initscripts-service-10.11.8-4.el9.noarch.rpm)
+Using IPROU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iproute-6.17.0-2.el9.x86_64.rpm (iproute-tc-6.17.0-2.el9.x86_64.rpm)
+Using ISCSI001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iscsi-initiator-utils-iscsiuio-6.2.1.11-0.git4b3e853.el9.x86_64.rpm (iscsi-initiator-utils-6.2.1.11-0.git4b3e853.el9.i686.rpm)
+Using INTEL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/intel-cmt-cat-25.04-1.el9.x86_64.rpm (intel-cmt-cat-25.04-1.el9.i686.rpm)
+Using ISNS_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/isns-utils-libs-0.101-4.el9.x86_64.rpm (isns-utils-0.101-4.el9.x86_64.rpm)
+Using IPTAB001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/i/iptables-libs-1.8.10-11.el9_5.x86_64.rpm (iptables-libs-1.8.10-11.el9_5.i686.rpm)
+Using LIBQM000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libqmi-1.34.0-1.el9.i686.rpm (libqmi-1.34.0-1.el9.x86_64.rpm)
+Using LIBVE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libverto-0.3.2-3.el9.x86_64.rpm (libverto-libev-0.3.2-3.el9.i686.rpm)
+Using LIBXM000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libxmlb-0.3.24-1.el9.x86_64.rpm (libxmlb-0.3.24-1.el9.i686.rpm)
+Using LIBSE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsepol-3.6-3.el9.x86_64.rpm (libsepol-3.6-3.el9.i686.rpm)
+Using LIBFD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libfdisk-2.37.4-25.el9.x86_64.rpm (libfdisk-2.37.4-25.el9.i686.rpm)
+Using LIBGC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgcrypt-1.10.0-11.el9.x86_64.rpm (libgcrypt-1.10.0-11.el9.i686.rpm)
+Using LIBVE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libverto-libev-0.3.2-3.el9.i686.rpm (libverto-0.3.2-3.el9.i686.rpm)
+Using LIBDA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libdaemon-0.14-23.el9.i686.rpm (libdaemon-0.14-23.el9.x86_64.rpm)
+Using LIBPC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpciaccess-0.16-7.el9.i686.rpm (libpciaccess-0.16-7.el9.x86_64.rpm)
+Using LIBPW000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpwquality-1.4.4-8.el9.i686.rpm (libpwquality-1.4.4-8.el9.x86_64.rpm)
+Using LMDB_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lmdb-libs-0.9.29-3.el9.x86_64.rpm (lmdb-libs-0.9.29-3.el9.i686.rpm)
+Using LIBRD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/librdmacm-61.0-2.el9.x86_64.rpm (librdmacm-utils-61.0-2.el9.x86_64.rpm)
+Using LIBTA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtasn1-4.16.0-9.el9.i686.rpm (libtasn1-4.16.0-9.el9.x86_64.rpm)
+Using LIBTO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtool-ltdl-2.4.6-46.el9.i686.rpm (libtool-ltdl-2.4.6-46.el9.x86_64.rpm)
+Using LIBNL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnl3-3.11.0-1.el9.x86_64.rpm (libnl3-3.11.0-1.el9.i686.rpm)
+Using LIBRD001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/librdmacm-utils-61.0-2.el9.x86_64.rpm (librdmacm-61.0-2.el9.i686.rpm)
+Using LOCKD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lockdev-1.0.4-0.38.20111007git.el9_6.x86_64.rpm (lockdev-1.0.4-0.38.20111007git.el9_6.i686.rpm)
+Using LIBKC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libkcapi-1.4.0-2.el9.x86_64.rpm (libkcapi-hmaccalc-1.4.0-2.el9.x86_64.rpm)
+Using LIBTE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtevent-0.17.1-1.el9.x86_64.rpm (libtevent-0.17.1-1.el9.i686.rpm)
+Using LIBSS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsss_idmap-2.9.8-4.el9_8.i686.rpm (libsss_idmap-2.9.8-4.el9_8.x86_64.rpm)
+Using LIBMB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libmbim-1.32.0-1.el9.i686.rpm (libmbim-1.32.0-1.el9.x86_64.rpm)
+Using LIBIS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libisofs-1.5.4-4.el9.x86_64.rpm (libisofs-1.5.4-4.el9.i686.rpm)
+Using LIBMN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libmnl-1.0.4-16.el9_4.i686.rpm (libmnl-1.0.4-16.el9_4.x86_64.rpm)
+Using LIBGU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgudev-237-1.el9.i686.rpm (libgudev-237-1.el9.x86_64.rpm)
+Using LIBVE002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libverto-0.3.2-3.el9.i686.rpm (libverto-libev-0.3.2-3.el9.x86_64.rpm)
+Using LIBUS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libusbx-1.0.26-1.el9.x86_64.rpm (libusbx-1.0.26-1.el9.i686.rpm)
+Using LIBNF000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnfsidmap-2.5.4-42.el9.x86_64.rpm (libnfsidmap-2.5.4-42.el9.i686.rpm)
+Using LIBJC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libjcat-0.1.6-3.el9.i686.rpm (libjcat-0.1.6-3.el9.x86_64.rpm)
+Using LIBSS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libss-1.46.5-8.el9.x86_64.rpm (libss-1.46.5-8.el9.i686.rpm)
+Using LZO_2000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lzo-2.10-7.el9.x86_64.rpm (lzo-2.10-7.el9.i686.rpm)
+Using LIBQR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libqrtr-glib-1.2.2-1.el9.x86_64.rpm (libqrtr-glib-1.2.2-1.el9.i686.rpm)
+Using LIBGO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgomp-11.5.0-14.el9.i686.rpm (libgomp-11.5.0-14.el9.x86_64.rpm)
+Using LIBND000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libndp-1.9-1.el9.x86_64.rpm (libndp-1.9-1.el9.i686.rpm)
+Using LIBUT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libutempter-1.2.1-6.el9.x86_64.rpm (libutempter-1.2.1-6.el9.i686.rpm)
+Using LDNS_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/ldns-1.7.1-12.el9.x86_64.rpm (ldns-1.7.1-12.el9.i686.rpm)
+Using LIBDB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libdb-5.3.28-57.el9_6.x86_64.rpm (libdb-5.3.28-57.el9_6.i686.rpm)
+Using LIBSM000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsmartcols-2.37.4-25.el9.x86_64.rpm (libsmartcols-2.37.4-25.el9.i686.rpm)
+Using LIBCO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcom_err-1.46.5-8.el9.x86_64.rpm (libcom_err-1.46.5-8.el9.i686.rpm)
+Using LIBTE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libteam-1.31-16.el9_1.i686.rpm (libteam-1.31-16.el9_1.x86_64.rpm)
+Using LIBIC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libicu-67.1-10.el9_6.x86_64.rpm (libicu-67.1-10.el9_6.i686.rpm)
+Using LIBFF000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libffi-3.4.2-8.el9.i686.rpm (libffi-3.4.2-8.el9.x86_64.rpm)
+Using LIBSO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsolv-0.7.24-4.el9.i686.rpm (libsolv-0.7.24-4.el9.x86_64.rpm)
+Using LIBZS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libzstd-1.5.5-1.el9.i686.rpm (libzstd-1.5.5-1.el9.x86_64.rpm)
+Using LINUX000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/linux-firmware-20260411-155.5.el9_7.noarch.rpm (linux-firmware-whence-20260411-155.5.el9_7.noarch.rpm)
+Using LIBPA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpath_utils-0.2.1-53.el9.i686.rpm (libpath_utils-0.2.1-53.el9.x86_64.rpm)
+Using LIBMB001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libmbim-1.32.0-1.el9.x86_64.rpm (libmbim-utils-1.32.0-1.el9.x86_64.rpm)
+Using LIBDN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libdnf-0.69.0-18.el9.rocky.0.1.x86_64.rpm (libdnf-0.69.0-18.el9.rocky.0.1.i686.rpm)
+Using LIBPC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpcap-1.10.0-4.el9.x86_64.rpm (libpcap-1.10.0-4.el9.i686.rpm)
+Using LIBSS002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsss_nss_idmap-2.9.8-4.el9_8.i686.rpm (libsss_nss_idmap-2.9.8-4.el9_8.x86_64.rpm)
+Using LIBNG000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnghttp2-1.43.0-6.el9_7.1.x86_64.rpm (libnghttp2-1.43.0-6.el9_7.1.i686.rpm)
+Using LIBPN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpng-1.6.37-15.el9.x86_64.rpm (libpng-1.6.37-15.el9.i686.rpm)
+Using LIBCA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcap-ng-0.8.2-7.el9.x86_64.rpm (libcap-ng-0.8.2-7.el9.i686.rpm)
+Using LIBGP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgpg-error-1.42-5.el9.i686.rpm (libgpg-error-1.42-5.el9.x86_64.rpm)
+Using LUA_L000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lua-libs-5.4.4-4.el9.x86_64.rpm (lua-libs-5.4.4-4.el9.i686.rpm)
+Using LLDPA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lldpad-1.1.1-4.gitf1dd9eb.el9.x86_64.rpm (lldpad-1.1.1-4.gitf1dd9eb.el9.i686.rpm)
+Using LZ4_L000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lz4-libs-1.9.3-5.el9.x86_64.rpm (lz4-libs-1.9.3-5.el9.i686.rpm)
+Using LIBAC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libacl-2.3.1-4.el9.x86_64.rpm (libacl-2.3.1-4.el9.i686.rpm)
+Using LIBCO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcollection-0.7.0-53.el9.i686.rpm (libcollection-0.7.0-53.el9.x86_64.rpm)
+Using LIBGC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgcc-11.5.0-14.el9.x86_64.rpm (libgcc-11.5.0-14.el9.i686.rpm)
+Using LIBCU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcurl-7.76.1-40.el9.i686.rpm (libcurl-minimal-7.76.1-40.el9.i686.rpm)
+Using LIBPI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpipeline-1.5.3-4.el9.x86_64.rpm (libpipeline-1.5.3-4.el9.i686.rpm)
+Using LIBMO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libmodulemd-2.13.0-2.el9.x86_64.rpm (libmodulemd-2.13.0-2.el9.i686.rpm)
+Using LIBIB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libibumad-61.0-2.el9.i686.rpm (libibumad-61.0-2.el9.x86_64.rpm)
+Using LIBDR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libdrm-2.4.128-1.el9.i686.rpm (libdrm-2.4.128-1.el9.x86_64.rpm)
+Using LIBNF001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnftnl-1.2.6-4.el9_4.i686.rpm (libnftnl-1.2.6-4.el9_4.x86_64.rpm)
+Using LIBSS003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsss_certmap-2.9.8-4.el9_8.i686.rpm (libsss_certmap-2.9.8-4.el9_8.x86_64.rpm)
+Using LIBEV000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libev-4.33-6.el9.x86_64.rpm (libev-4.33-6.el9.i686.rpm)
+Using LIBWB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libwbclient-4.23.5-6.el9.x86_64.rpm (libwbclient-4.23.5-6.el9.i686.rpm)
+Using LIBES000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libestr-0.1.11-4.el9.x86_64.rpm (libestr-0.1.11-4.el9.i686.rpm)
+Using LIBXM001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libxml2-2.9.13-14.el9_7.x86_64.rpm (libxml2-2.9.13-14.el9_7.i686.rpm)
+Using LIBTA001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtalloc-2.4.3-1.el9.x86_64.rpm (libtalloc-2.4.3-1.el9.i686.rpm)
+Using LIBCU001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcurl-minimal-7.76.1-40.el9.i686.rpm (libcurl-7.76.1-40.el9.x86_64.rpm)
+Using LIBBU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libburn-1.5.4-5.el9.x86_64.rpm (libburn-1.5.4-5.el9.i686.rpm)
+Using LIBRE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libref_array-0.1.5-53.el9.x86_64.rpm (libref_array-0.1.5-53.el9.i686.rpm)
+Using LIBUS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libuser-0.63-17.el9.i686.rpm (libuser-0.63-17.el9.x86_64.rpm)
+Using LIBGF000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libgfortran-11.5.0-14.el9.x86_64.rpm (libgfortran-11.5.0-14.el9.i686.rpm)
+Using LIBIB001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libibverbs-61.0-2.el9.i686.rpm (libibverbs-utils-61.0-2.el9.x86_64.rpm)
+Using LIBNE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnetfilter_conntrack-1.0.9-1.el9.x86_64.rpm (libnetfilter_conntrack-1.0.9-1.el9.i686.rpm)
+Using LIBCO002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcomps-0.1.18-1.el9.x86_64.rpm (libcomps-0.1.18-1.el9.i686.rpm)
+Using LIBSE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libseccomp-2.5.2-2.el9.i686.rpm (libseccomp-2.5.2-2.el9.x86_64.rpm)
+Using LIBUU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libuuid-2.37.4-25.el9.x86_64.rpm (libuuid-2.37.4-25.el9.i686.rpm)
+Using LIBRE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/librepo-1.19.0-1.el9.i686.rpm (librepo-1.19.0-1.el9.x86_64.rpm)
+Using LIBCO003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libconfig-1.7.2-9.el9.x86_64.rpm (libconfig-1.7.2-9.el9.i686.rpm)
+Using LIBSM001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsmbclient-4.23.5-6.el9.i686.rpm (libsmbclient-4.23.5-6.el9.x86_64.rpm)
+Using LIBIS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libisoburn-1.5.4-5.el9.x86_64.rpm (libisoburn-1.5.4-5.el9.i686.rpm)
+Using LIBPS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpsl-0.21.1-5.el9.i686.rpm (libpsl-0.21.1-5.el9.x86_64.rpm)
+Using LIBEC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libeconf-0.4.1-5.el9.i686.rpm (libeconf-0.4.1-5.el9.x86_64.rpm)
+Using LIBCA001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcap-2.48-10.el9_7.1.i686.rpm (libcap-2.48-10.el9_7.1.x86_64.rpm)
+Using LIBCB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcbor-0.7.0-5.el9.i686.rpm (libcbor-0.7.0-5.el9.x86_64.rpm)
+Using LIBIN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libini_config-1.3.1-53.el9.i686.rpm (libini_config-1.3.1-53.el9.x86_64.rpm)
+Using LIBKS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libksba-1.5.1-7.el9.x86_64.rpm (libksba-1.5.1-7.el9.i686.rpm)
+Using LIBAT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libattr-2.5.1-3.el9.i686.rpm (libattr-2.5.1-3.el9.x86_64.rpm)
+Using LIBLD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libldb-4.23.5-6.el9.i686.rpm (libldb-4.23.5-6.el9.x86_64.rpm)
+Using LIBFI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libfido2-1.13.0-2.el9.i686.rpm (libfido2-1.13.0-2.el9.x86_64.rpm)
+Using LIBBR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libbrotli-1.0.9-9.el9_7.i686.rpm (libbrotli-1.0.9-9.el9_7.x86_64.rpm)
+Using LIBTI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtirpc-1.3.3-9.el9.x86_64.rpm (libtirpc-1.3.3-9.el9.i686.rpm)
+Using LIBSE002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libselinux-utils-3.6-3.el9.x86_64.rpm (libselinux-3.6-3.el9.i686.rpm)
+Using LIBAS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libassuan-2.5.5-3.el9.x86_64.rpm (libassuan-2.5.5-3.el9.i686.rpm)
+Using LIBED000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libedit-3.1-39.20210216cvs.el9.i686.rpm (libedit-3.1-39.20210216cvs.el9.x86_64.rpm)
+Using LIBSI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsigsegv-2.13-4.el9.i686.rpm (libsigsegv-2.13-4.el9.x86_64.rpm)
+Using LIBKC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libkcapi-hmaccalc-1.4.0-2.el9.x86_64.rpm (libkcapi-1.4.0-2.el9.i686.rpm)
+Using LIBUN000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libunistring-0.9.10-15.el9.x86_64.rpm (libunistring-0.9.10-15.el9.i686.rpm)
+Using LIBBL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libblkid-2.37.4-25.el9.x86_64.rpm (libblkid-2.37.4-25.el9.i686.rpm)
+Using LIBNF002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnfnetlink-1.0.1-23.el9_5.i686.rpm (libnfnetlink-1.0.1-23.el9_5.x86_64.rpm)
+Using LIBSS004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libssh-0.10.4-18.el9.x86_64.rpm (libssh-0.10.4-18.el9.i686.rpm)
+Using LIBMO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libmount-2.37.4-25.el9.i686.rpm (libmount-2.37.4-25.el9.x86_64.rpm)
+Using LIBBP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libbpf-1.5.0-3.el9.i686.rpm (libbpf-1.5.0-3.el9.x86_64.rpm)
+Using LIBYA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libyaml-0.2.5-7.el9.i686.rpm (libyaml-0.2.5-7.el9.x86_64.rpm)
+Using LIBSY000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsysfs-2.1.1-11.el9.x86_64.rpm (libsysfs-2.1.1-11.el9.i686.rpm)
+Using LIBXC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libxcrypt-4.4.18-3.el9.i686.rpm (libxcrypt-4.4.18-3.el9.x86_64.rpm)
+Using LIBSE003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libselinux-3.6-3.el9.i686.rpm (libselinux-3.6-3.el9.x86_64.rpm)
+Using LIBTD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libtdb-1.4.14-1.el9.i686.rpm (libtdb-1.4.14-1.el9.x86_64.rpm)
+Using LIBXS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libxslt-1.1.34-14.el9_7.1.x86_64.rpm (libxslt-1.1.34-14.el9_7.1.i686.rpm)
+Using LIBKA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libkadm5-1.21.1-10.el9_8.i686.rpm (libkadm5-1.21.1-10.el9_8.x86_64.rpm)
+Using LIBNE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnetapi-4.23.5-6.el9.x86_64.rpm (libnetapi-4.23.5-6.el9.i686.rpm)
+Using LIBSE004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libsemanage-3.6-5.el9_6.i686.rpm (libsemanage-3.6-5.el9_6.x86_64.rpm)
+Using LIBEV001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libevent-2.1.12-8.el9_4.i686.rpm (libevent-2.1.12-8.el9_4.x86_64.rpm)
+Using LIBDH000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libdhash-0.5.0-53.el9.i686.rpm (libdhash-0.5.0-53.el9.x86_64.rpm)
+Using LIBAI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libaio-0.3.111-13.el9.i686.rpm (libaio-0.3.111-13.el9.x86_64.rpm)
+Using LIBBA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libbasicobjects-0.1.1-53.el9.x86_64.rpm (libbasicobjects-0.1.1-53.el9.i686.rpm)
+Using LIBQB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libqb-2.0.8-1.el9.x86_64.rpm (libqb-2.0.8-1.el9.i686.rpm)
+Using LIBQU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libquadmath-11.5.0-14.el9.x86_64.rpm (libquadmath-11.5.0-14.el9.i686.rpm)
+Using LIBAR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libarchive-3.5.3-9.el9_7.i686.rpm (libarchive-3.5.3-9.el9_7.x86_64.rpm)
+Using LIBIB002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libibverbs-utils-61.0-2.el9.x86_64.rpm (libibverbs-61.0-2.el9.x86_64.rpm)
+Using LIBST000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libstdc++-11.5.0-14.el9.i686.rpm (libstdc++-11.5.0-14.el9.x86_64.rpm)
+Using LIBNV000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnvme-1.16.1-3.el9.x86_64.rpm (libnvme-1.16.1-3.el9.i686.rpm)
+Using LIBCU002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libcurl-7.76.1-40.el9.x86_64.rpm (libcurl-minimal-7.76.1-40.el9.x86_64.rpm)
+Using LIBIP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libipa_hbac-2.9.8-4.el9_8.x86_64.rpm (libipa_hbac-2.9.8-4.el9_8.i686.rpm)
+Using LIBPR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libproxy-0.4.15-35.el9.i686.rpm (libproxy-0.4.15-35.el9.x86_64.rpm)
+Using LIBNL001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libnl3-cli-3.11.0-1.el9.x86_64.rpm (libnl3-cli-3.11.0-1.el9.i686.rpm)
+Using LKSCT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lksctp-tools-1.0.19-3.el9_4.x86_64.rpm (lksctp-tools-1.0.19-3.el9_4.i686.rpm)
+Using LIBPK000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libpkgconf-1.7.3-10.el9.i686.rpm (libpkgconf-1.7.3-10.el9.x86_64.rpm)
+Using LIBID000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libidn2-2.3.0-7.el9.x86_64.rpm (libidn2-2.3.0-7.el9.i686.rpm)
+Using LIBFA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/libfastjson-0.99.9-5.el9.i686.rpm (libfastjson-0.99.9-5.el9.x86_64.rpm)
+Using LVM2_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/l/lvm2-libs-2.03.33-4.el9.1.i686.rpm (lvm2-libs-2.03.33-4.el9.1.x86_64.rpm)
+Using HWLOC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/h/hwloc-libs-2.4.1-6.el9_7.i686.rpm (hwloc-libs-2.4.1-6.el9_7.x86_64.rpm)
+Using HARFB000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/h/harfbuzz-2.7.4-10.el9.x86_64.rpm (harfbuzz-2.7.4-10.el9.i686.rpm)
+Using DEVIC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-libs-1.02.207-4.el9.1.x86_64.rpm (device-mapper-libs-1.02.207-4.el9.1.i686.rpm)
+Using DEVIC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-libs-1.02.207-4.el9.1.i686.rpm (device-mapper-persistent-data-1.1.0-1.el9.x86_64.rpm)
+Using DEVIC002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-persistent-data-1.1.0-1.el9.x86_64.rpm (device-mapper-multipath-0.8.7-45.el9.x86_64.rpm)
+Using DBUS_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/dbus-libs-1.12.20-8.el9.x86_64.rpm (dbus-libs-1.12.20-8.el9.i686.rpm)
+Using DEVIC003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-multipath-0.8.7-45.el9.x86_64.rpm (device-mapper-event-libs-1.02.207-4.el9.1.x86_64.rpm)
+Using DEVIC004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-event-libs-1.02.207-4.el9.1.x86_64.rpm (device-mapper-1.02.207-4.el9.1.x86_64.rpm)
+Using DEVIC005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-1.02.207-4.el9.1.x86_64.rpm (device-mapper-multipath-libs-0.8.7-45.el9.x86_64.rpm)
+Using DEJAV000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/dejavu-serif-fonts-2.37-18.el9.noarch.rpm (dejavu-sans-fonts-2.37-18.el9.noarch.rpm)
+Using DEJAV001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/dejavu-sans-fonts-2.37-18.el9.noarch.rpm (dejavu-sans-mono-fonts-2.37-18.el9.noarch.rpm)
+Using DEVIC006.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-multipath-libs-0.8.7-45.el9.x86_64.rpm (device-mapper-multipath-libs-0.8.7-45.el9.i686.rpm)
+Using DRACU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/dracut-config-generic-057-110.git20260130.el9.x86_64.rpm (dracut-config-rescue-057-110.git20260130.el9.x86_64.rpm)
+Using DEVIC007.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-multipath-libs-0.8.7-45.el9.i686.rpm (device-mapper-event-libs-1.02.207-4.el9.1.i686.rpm)
+Using DEVIC008.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/d/device-mapper-event-libs-1.02.207-4.el9.1.i686.rpm (device-mapper-event-1.02.207-4.el9.1.x86_64.rpm)
+Using ZLIB_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/z/zlib-1.2.11-40.el9.i686.rpm (zlib-1.2.11-40.el9.x86_64.rpm)
+Using FILE_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/f/file-libs-5.39-17.el9.x86_64.rpm (file-libs-5.39-17.el9.i686.rpm)
+Using FIREW000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/f/firewalld-filesystem-1.3.4-18.el9_7.noarch.rpm (firewalld-1.3.4-18.el9_7.noarch.rpm)
+Using FUSE_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/f/fuse-libs-2.9.9-17.el9.i686.rpm (fuse-libs-2.9.9-17.el9.x86_64.rpm)
+Using FREET000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/f/freetype-2.10.4-10.el9_5.x86_64.rpm (freetype-2.10.4-10.el9_5.i686.rpm)
+Using USERS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/u/userspace-rcu-0.12.1-6.el9.i686.rpm (userspace-rcu-0.12.1-6.el9.x86_64.rpm)
+Using UNBOU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/u/unbound-libs-1.24.2-2.el9.i686.rpm (unbound-libs-1.24.2-2.el9.x86_64.rpm)
+Using UTIL_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/u/util-linux-2.37.4-25.el9.x86_64.rpm (util-linux-core-2.37.4-25.el9.x86_64.rpm)
+Using UTIL_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/u/util-linux-core-2.37.4-25.el9.x86_64.rpm (util-linux-user-2.37.4-25.el9.x86_64.rpm)
+Using USB_M000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/u/usb_modeswitch-2.6.1-4.el9.x86_64.rpm (usb_modeswitch-data-20191128-6.el9.0.1.noarch.rpm)
+Using ELFUT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-libs-0.194-1.el9.rocky.0.1.i686.rpm (elfutils-libelf-0.194-1.el9.rocky.0.1.i686.rpm)
+Using ELFUT001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-libelf-0.194-1.el9.rocky.0.1.i686.rpm (elfutils-libelf-0.194-1.el9.rocky.0.1.x86_64.rpm)
+Using EFIVA000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/efivar-libs-38-3.el9.x86_64.rpm (efivar-libs-38-3.el9.i686.rpm)
+Using ELFUT002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-libelf-0.194-1.el9.rocky.0.1.x86_64.rpm (elfutils-libs-0.194-1.el9.rocky.0.1.x86_64.rpm)
+Using EXPAT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/expat-2.5.0-6.el9.i686.rpm (expat-2.5.0-6.el9.x86_64.rpm)
+Using E2FSP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/e2fsprogs-libs-1.46.5-8.el9.x86_64.rpm (e2fsprogs-libs-1.46.5-8.el9.i686.rpm)
+Using ELFUT003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-libs-0.194-1.el9.rocky.0.1.x86_64.rpm (elfutils-0.194-1.el9.rocky.0.1.x86_64.rpm)
+Using ELFUT004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-0.194-1.el9.rocky.0.1.x86_64.rpm (elfutils-default-yama-scope-0.194-1.el9.rocky.0.1.noarch.rpm)
+Using ELFUT005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-default-yama-scope-0.194-1.el9.rocky.0.1.noarch.rpm (elfutils-debuginfod-client-0.194-1.el9.rocky.0.1.x86_64.rpm)
+Using E2FSP001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/e2fsprogs-libs-1.46.5-8.el9.i686.rpm (e2fsprogs-1.46.5-8.el9.x86_64.rpm)
+Using ELFUT006.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/e/elfutils-debuginfod-client-0.194-1.el9.rocky.0.1.x86_64.rpm (elfutils-debuginfod-client-0.194-1.el9.rocky.0.1.i686.rpm)
+Using JSON_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/j/json-c-0.14-11.el9.x86_64.rpm (json-c-0.14-11.el9.i686.rpm)
+Using JITTE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/j/jitterentropy-3.6.0-1.el9.i686.rpm (jitterentropy-3.6.0-1.el9.x86_64.rpm)
+Using JQ_1_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/j/jq-1.6-19.el9_8.2.i686.rpm (jq-1.6-19.el9_8.2.x86_64.rpm)
+Using JSON_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/j/json-glib-1.6.6-1.el9.i686.rpm (json-glib-1.6.6-1.el9.x86_64.rpm)
+Using JANSS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/j/jansson-2.14-1.el9.0.1.x86_64.rpm (jansson-2.14-1.el9.0.1.i686.rpm)
+Using PYTHO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-librepo-1.19.0-1.el9.x86_64.rpm (python3-cloud-what-1.29.50-1.el9.rocky.0.1.x86_64.rpm)
+Using PYTHO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-cloud-what-1.29.50-1.el9.rocky.0.1.x86_64.rpm (python3-distro-1.5.0-7.el9.noarch.rpm)
+Using PYTHO002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-distro-1.5.0-7.el9.noarch.rpm (python3-libcomps-0.1.18-1.el9.x86_64.rpm)
+Using PYTHO003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libcomps-0.1.18-1.el9.x86_64.rpm (python3-requests-2.25.1-10.el9_6.noarch.rpm)
+Using PYTHO004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-requests-2.25.1-10.el9_6.noarch.rpm (python3-pexpect-4.8.0-7.el9.noarch.rpm)
+Using PYTHO005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pexpect-4.8.0-7.el9.noarch.rpm (python3-pip-wheel-21.3.1-2.el9_8.rocky.0.1.noarch.rpm)
+Using PYTHO006.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pip-wheel-21.3.1-2.el9_8.rocky.0.1.noarch.rpm (python3-pyyaml-5.4.1-6.el9.x86_64.rpm)
+Using PYTHO007.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pyyaml-5.4.1-6.el9.x86_64.rpm (python3-idna-2.10-7.el9_4.1.noarch.rpm)
+Using PYTHO008.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-idna-2.10-7.el9_4.1.noarch.rpm (python3-gobject-base-noarch-3.40.1-6.el9.noarch.rpm)
+Using PYTHO009.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-gobject-base-noarch-3.40.1-6.el9.noarch.rpm (python3-decorator-4.4.2-6.el9.0.1.noarch.rpm)
+Using PYTHO00A.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-decorator-4.4.2-6.el9.0.1.noarch.rpm (python3-setuptools-wheel-53.0.0-15.el9.noarch.rpm)
+Using PYTHO00B.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-setuptools-wheel-53.0.0-15.el9.noarch.rpm (python3-ptyprocess-0.6.0-12.el9.0.1.noarch.rpm)
+Using PCSC_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pcsc-lite-1.9.4-2.el9.x86_64.rpm (pcsc-lite-libs-1.9.4-2.el9.x86_64.rpm)
+Using PYTHO00C.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-ptyprocess-0.6.0-12.el9.0.1.noarch.rpm (python3-systemd-234-19.el9.x86_64.rpm)
+Using POLIC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/policycoreutils-newrole-3.6-5.el9.x86_64.rpm (policycoreutils-3.6-5.el9.x86_64.rpm)
+Using P11_K000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/p11-kit-trust-0.26.2-1.el9.x86_64.rpm (p11-kit-trust-0.26.2-1.el9.i686.rpm)
+Using PCIUT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pciutils-libs-3.7.0-7.el9.x86_64.rpm (pciutils-libs-3.7.0-7.el9.i686.rpm)
+Using P11_K001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/p11-kit-trust-0.26.2-1.el9.i686.rpm (p11-kit-0.26.2-1.el9.i686.rpm)
+Using PYTHO00D.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-systemd-234-19.el9.x86_64.rpm (python3-chardet-4.0.0-5.el9.noarch.rpm)
+Using PYTHO00E.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-chardet-4.0.0-5.el9.noarch.rpm (python3-subscription-manager-rhsm-1.29.50-1.el9.rocky.0.1.x86_64.rpm)
+Using PYTHO00F.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-subscription-manager-rhsm-1.29.50-1.el9.rocky.0.1.x86_64.rpm (python3-rpm-4.16.1.3-40.el9.x86_64.rpm)
+Using PYTHO00G.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-rpm-4.16.1.3-40.el9.x86_64.rpm (python3-libs-3.9.25-7.el9_8.i686.rpm)
+Using PYTHO00H.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libs-3.9.25-7.el9_8.i686.rpm (python3-nftables-1.0.9-6.el9_7.x86_64.rpm)
+Using POLKI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/polkit-libs-0.117-14.el9.i686.rpm (polkit-libs-0.117-14.el9.x86_64.rpm)
+Using PYTHO00I.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-nftables-1.0.9-6.el9_7.x86_64.rpm (python3-linux-procfs-0.7.4-2.el9.noarch.rpm)
+Using PYTHO00J.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-linux-procfs-0.7.4-2.el9.noarch.rpm (python3-3.9.25-7.el9_8.x86_64.rpm)
+Using PYTHO00K.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-3.9.25-7.el9_8.x86_64.rpm (python3-audit-3.1.5-8.el9.x86_64.rpm)
+Using POLIC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/policycoreutils-3.6-5.el9.x86_64.rpm (policycoreutils-python-utils-3.6-5.el9.noarch.rpm)
+Using PYTHO00L.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-audit-3.1.5-8.el9.x86_64.rpm (python3-firewall-1.3.4-18.el9_7.noarch.rpm)
+Using PCSC_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pcsc-lite-libs-1.9.4-2.el9.x86_64.rpm (pcsc-lite-libs-1.9.4-2.el9.i686.rpm)
+Using PROCP000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/procps-ng-3.3.17-14.el9.x86_64.rpm (procps-ng-3.3.17-14.el9.i686.rpm)
+Using PYTHO00M.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-firewall-1.3.4-18.el9_7.noarch.rpm (python3-urwid-2.1.2-4.el9.x86_64.rpm)
+Using P11_K002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/p11-kit-0.26.2-1.el9.i686.rpm (p11-kit-0.26.2-1.el9.x86_64.rpm)
+Using PROTO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/protobuf-c-1.3.3-13.el9.i686.rpm (protobuf-3.14.0-17.el9_7.x86_64.rpm)
+Using PYTHO00N.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-urwid-2.1.2-4.el9.x86_64.rpm (python3-policycoreutils-3.6-5.el9.noarch.rpm)
+Using PYTHO00O.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-policycoreutils-3.6-5.el9.noarch.rpm (python3-pyudev-0.22.0-6.el9.0.1.noarch.rpm)
+Using PYTHO00P.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pyudev-0.22.0-6.el9.0.1.noarch.rpm (python3-gpg-1.15.1-6.el9.x86_64.rpm)
+Using PROTO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/protobuf-3.14.0-17.el9_7.x86_64.rpm (protobuf-c-1.3.3-13.el9.x86_64.rpm)
+Using PYTHO00Q.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-gpg-1.15.1-6.el9.x86_64.rpm (python3-urllib3-1.26.5-7.el9.noarch.rpm)
+Using PYTHO00R.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-urllib3-1.26.5-7.el9.noarch.rpm (python3-dateutil-2.9.0.post0-1.el9_7.noarch.rpm)
+Using PYTHO00S.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-dateutil-2.9.0.post0-1.el9_7.noarch.rpm (python3-dnf-plugins-core-4.3.0-26.el9.noarch.rpm)
+Using PKGCO000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pkgconf-1.7.3-10.el9.x86_64.rpm (pkgconf-m4-1.7.3-10.el9.noarch.rpm)
+Using PYTHO00T.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-dnf-plugins-core-4.3.0-26.el9.noarch.rpm (python3-dbus-1.2.18-2.el9.0.1.x86_64.rpm)
+Using PAM_1000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pam-1.5.1-28.el9.i686.rpm (pam-1.5.1-28.el9.x86_64.rpm)
+Using PYTHO00U.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-dbus-1.2.18-2.el9.0.1.x86_64.rpm (python3-setuptools-53.0.0-15.el9.noarch.rpm)
+Using PYTHO00V.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-setuptools-53.0.0-15.el9.noarch.rpm (python3-inotify-0.9.6-25.el9.0.1.noarch.rpm)
+Using PYTHO00W.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-inotify-0.9.6-25.el9.0.1.noarch.rpm (python3-libs-3.9.25-7.el9_8.x86_64.rpm)
+Using PYTHO00X.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libs-3.9.25-7.el9_8.x86_64.rpm (python3-libselinux-3.6-3.el9.x86_64.rpm)
+Using PCSC_002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pcsc-lite-libs-1.9.4-2.el9.i686.rpm (pcsc-lite-ccid-1.5.2-1.el9.x86_64.rpm)
+Using PYTHO00Y.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libselinux-3.6-3.el9.x86_64.rpm (python3-iniparse-0.4-45.el9.0.1.noarch.rpm)
+Using PROTO002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/protobuf-c-1.3.3-13.el9.x86_64.rpm (protobuf-3.14.0-17.el9_7.i686.rpm)
+Using PYTHO00Z.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-iniparse-0.4-45.el9.0.1.noarch.rpm (python3-setools-4.4.4-1.el9.x86_64.rpm)
+Using PYTHO010.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-setools-4.4.4-1.el9.x86_64.rpm (python3-hawkey-0.69.0-18.el9.rocky.0.1.x86_64.rpm)
+Using PCIUT001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pciutils-libs-3.7.0-7.el9.i686.rpm (pciutils-3.7.0-7.el9.x86_64.rpm)
+Using PYTHO011.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-hawkey-0.69.0-18.el9.rocky.0.1.x86_64.rpm (python3-kmod-0.9-32.el9.0.1.x86_64.rpm)
+Using POPT_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/popt-1.18-8.el9.x86_64.rpm (popt-1.18-8.el9.i686.rpm)
+Using PYTHO012.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-kmod-0.9-32.el9.0.1.x86_64.rpm (python3-pyparsing-2.4.7-9.el9.0.1.noarch.rpm)
+Using PCRE_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pcre-8.44-4.el9.i686.rpm (pcre-8.44-4.el9.x86_64.rpm)
+Using PKGCO001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pkgconf-m4-1.7.3-10.el9.noarch.rpm (pkgconf-pkg-config-1.7.3-10.el9.x86_64.rpm)
+Using PYTHO013.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pyparsing-2.4.7-9.el9.0.1.noarch.rpm (python3-libdnf-0.69.0-18.el9.rocky.0.1.x86_64.rpm)
+Using PCRE2000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/pcre2-10.40-6.el9.i686.rpm (pcre2-10.40-6.el9.x86_64.rpm)
+Using PARTE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/parted-3.5-3.el9.i686.rpm (parted-3.5-3.el9.x86_64.rpm)
+Using PYTHO014.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libdnf-0.69.0-18.el9.rocky.0.1.x86_64.rpm (python3-six-1.15.0-9.el9.noarch.rpm)
+Using PYTHO015.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-six-1.15.0-9.el9.noarch.rpm (python3-pysocks-1.7.1-12.el9.0.1.noarch.rpm)
+Using PYTHO016.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-pysocks-1.7.1-12.el9.0.1.noarch.rpm (python3-configshell-1.1.30-1.el9.noarch.rpm)
+Using PYTHO017.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-configshell-1.1.30-1.el9.noarch.rpm (python3-libsemanage-3.6-5.el9_6.x86_64.rpm)
+Using PYTHO018.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-libsemanage-3.6-5.el9_6.x86_64.rpm (python3-gobject-base-3.40.1-6.el9.x86_64.rpm)
+Using PYTHO019.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/p/python3-gobject-base-3.40.1-6.el9.x86_64.rpm (python3-dnf-4.14.0-34.el9_8.rocky.0.1.noarch.rpm)
+Using KMOD_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/kmod-libs-28-11.el9.i686.rpm (kmod-libs-28-11.el9.x86_64.rpm)
+Using KRB5_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/krb5-pkinit-1.21.1-10.el9_8.i686.rpm (krb5-pkinit-1.21.1-10.el9_8.x86_64.rpm)
+Using KEYUT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/keyutils-libs-1.6.3-1.el9.i686.rpm (keyutils-libs-1.6.3-1.el9.x86_64.rpm)
+Using KERNE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/kernel-modules-extra-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm (kernel-modules-core-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm)
+Using KERNE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/kernel-tools-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm (kernel-tools-libs-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm)
+Using KRB5_001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/krb5-libs-1.21.1-10.el9_8.i686.rpm (krb5-libs-1.21.1-10.el9_8.x86_64.rpm)
+Using KEYUT001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/keyutils-libs-1.6.3-1.el9.x86_64.rpm (keyutils-1.6.3-1.el9.x86_64.rpm)
+Using KRB5_002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/krb5-server-1.21.1-10.el9_8.i686.rpm (krb5-server-1.21.1-10.el9_8.x86_64.rpm)
+Using KERNE002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/k/kernel-modules-core-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm (kernel-modules-5.14.0-687.10.1.el9_8.0.1.x86_64.rpm)
+Using ONIGU000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/oniguruma-6.9.6-1.el9.6.i686.rpm (oniguruma-6.9.6-1.el9.6.x86_64.rpm)
+Using OPENS000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openscap-1.3.13-1.el9_7.rocky.0.1.x86_64.rpm (openscap-1.3.13-1.el9_7.rocky.0.1.i686.rpm)
+Using OPENS001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssl-libs-3.5.5-2.el9_8.x86_64.rpm (openssl-3.5.5-2.el9_8.x86_64.rpm)
+Using OPENS002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openscap-1.3.13-1.el9_7.rocky.0.1.i686.rpm (openscap-scanner-1.3.13-1.el9_7.rocky.0.1.x86_64.rpm)
+Using OPENS003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opensm-libs-3.3.24-2.el9.x86_64.rpm (opensm-libs-3.3.24-2.el9.i686.rpm)
+Using OPENC000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opencryptoki-libs-3.26.0-2.el9_8.1.x86_64.rpm (opencryptoki-libs-3.26.0-2.el9_8.1.i686.rpm)
+Using OPENL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openldap-clients-2.6.8-4.el9.0.1.x86_64.rpm (openldap-2.6.8-4.el9.0.1.x86_64.rpm)
+Using OPENS004.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssl-3.5.5-2.el9_8.x86_64.rpm (openssl-pkcs11-0.4.11-9.el9.i686.rpm)
+Using OPENS005.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssh-clients-9.9p1-7.el9_8.rocky.0.1.x86_64.rpm (openssh-server-9.9p1-7.el9_8.rocky.0.1.x86_64.rpm)
+Using OPENS006.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssl-pkcs11-0.4.11-9.el9.i686.rpm (openssl-libs-3.5.5-2.el9_8.i686.rpm)
+Using OPENC001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opencryptoki-libs-3.26.0-2.el9_8.1.i686.rpm (opencryptoki-3.26.0-2.el9_8.1.x86_64.rpm)
+Using OPENC002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opencryptoki-3.26.0-2.el9_8.1.x86_64.rpm (opencryptoki-icsftok-3.26.0-2.el9_8.1.x86_64.rpm)
+Using OPENS007.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opensc-0.23.0-6.el9.i686.rpm (opensc-0.23.0-6.el9.x86_64.rpm)
+Using OPENC003.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/opencryptoki-icsftok-3.26.0-2.el9_8.1.x86_64.rpm (opencryptoki-swtok-3.26.0-2.el9_8.1.x86_64.rpm)
+Using OPENS008.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssl-libs-3.5.5-2.el9_8.i686.rpm (openssl-pkcs11-0.4.11-9.el9.x86_64.rpm)
+Using OPENS009.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openssh-server-9.9p1-7.el9_8.rocky.0.1.x86_64.rpm (openssh-9.9p1-7.el9_8.rocky.0.1.x86_64.rpm)
+Using OPENL001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/o/openldap-2.6.8-4.el9.0.1.x86_64.rpm (openldap-2.6.8-4.el9.0.1.i686.rpm)
+Using TSS2_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/t/tss2-1.6.0-7.el9.i686.rpm (tss2-1.6.0-7.el9.x86_64.rpm)
+Using TEAMD000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/t/teamd-1.31-16.el9_1.x86_64.rpm (teamd-1.31-16.el9_1.i686.rpm)
+Using TPM2_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/t/tpm2-tss-3.2.3-1.el9.x86_64.rpm (tpm2-tss-3.2.3-1.el9.i686.rpm)
+Using XZ_LI000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/x/xz-libs-5.2.5-8.el9_0.i686.rpm (xz-libs-5.2.5-8.el9_0.x86_64.rpm)
+Using XMLSE000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/x/xmlsec1-1.2.29-13.el9.i686.rpm (xmlsec1-1.2.29-13.el9.x86_64.rpm)
+Using XMLSE001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/x/xmlsec1-1.2.29-13.el9.x86_64.rpm (xmlsec1-openssl-1.2.29-13.el9.i686.rpm)
+Using XFSPR000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/x/xfsprogs-6.4.0-7.el9.x86_64.rpm (xfsprogs-6.4.0-7.el9.i686.rpm)
+Using XMLSE002.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/x/xmlsec1-openssl-1.2.29-13.el9.i686.rpm (xmlsec1-openssl-1.2.29-13.el9.x86_64.rpm)
+Using RPM_P000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-plugin-fapolicyd-4.16.1.3-40.el9.x86_64.rpm (rpm-plugin-selinux-4.16.1.3-40.el9.x86_64.rpm)
+Using READL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/readline-8.1-4.el9.x86_64.rpm (readline-8.1-4.el9.i686.rpm)
+Using ROCKY000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rocky-release-9.8-1.1.el9.noarch.rpm (rocky-repos-9.8-1.1.el9.noarch.rpm)
+Using RPM_P001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-plugin-selinux-4.16.1.3-40.el9.x86_64.rpm (rpm-plugin-audit-4.16.1.3-40.el9.x86_64.rpm)
+Using RPM_B000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-build-libs-4.16.1.3-40.el9.x86_64.rpm (rpm-build-libs-4.16.1.3-40.el9.i686.rpm)
+Using RSYSL000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rsyslog-8.2510.0-2.el9.x86_64.rpm (rsyslog-gnutls-8.2510.0-2.el9.x86_64.rpm)
+Using RPM_S000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-sign-libs-4.16.1.3-40.el9.x86_64.rpm (rpm-sign-libs-4.16.1.3-40.el9.i686.rpm)
+Using RSYSL001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rsyslog-gnutls-8.2510.0-2.el9.x86_64.rpm (rsyslog-logrotate-8.2510.0-2.el9.x86_64.rpm)
+Using RPM_L000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-libs-4.16.1.3-40.el9.i686.rpm (rpm-libs-4.16.1.3-40.el9.x86_64.rpm)
+Using RPM_S001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/r/rpm-sign-libs-4.16.1.3-40.el9.i686.rpm (rpm-sign-4.16.1.3-40.el9.x86_64.rpm)
+Using MODEM000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/m/ModemManager-glib-1.20.2-1.el9.x86_64.rpm (ModemManager-1.20.2-1.el9.x86_64.rpm)
+Using MPFR_000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/m/mpfr-4.1.0-10.el9.i686.rpm (mpfr-4.1.0-10.el9.x86_64.rpm)
+Using MODEM001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/m/ModemManager-1.20.2-1.el9.x86_64.rpm (ModemManager-glib-1.20.2-1.el9.i686.rpm)
+Using BZIP2000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/b/bzip2-libs-1.0.8-11.el9.i686.rpm (bzip2-libs-1.0.8-11.el9.x86_64.rpm)
+Using BLUEZ000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/b/bluez-libs-5.85-1.el9.x86_64.rpm (bluez-libs-5.85-1.el9.i686.rpm)
+Using BINUT000.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/b/binutils-gold-2.35.2-72.el9.x86_64.rpm (binutils-2.35.2-72.el9.i686.rpm)
+Using BINUT001.RPM;1 for  /tmp/tmpn0c8wsay/Minimal/Packages/b/binutils-2.35.2-72.el9.i686.rpm (binutils-2.35.2-72.el9.x86_64.rpm)
+Size of boot image is 4 sectors -> No emulation
+  0.34% done, estimate finish Wed Jun  3 17:08:34 2026
+  0.68% done, estimate finish Wed Jun  3 17:08:34 2026
+  1.03% done, estimate finish Wed Jun  3 17:08:34 2026
+  1.37% done, estimate finish Wed Jun  3 17:08:34 2026
+  1.71% done, estimate finish Wed Jun  3 17:08:34 2026
+  2.05% done, estimate finish Wed Jun  3 17:08:34 2026
+  2.40% done, estimate finish Wed Jun  3 17:08:34 2026
+  2.74% done, estimate finish Wed Jun  3 17:08:34 2026
+  3.08% done, estimate finish Wed Jun  3 17:08:34 2026
+  3.42% done, estimate finish Wed Jun  3 17:08:34 2026
+  3.77% done, estimate finish Wed Jun  3 17:08:34 2026
+  4.11% done, estimate finish Wed Jun  3 17:08:34 2026
+  4.45% done, estimate finish Wed Jun  3 17:08:34 2026
+  4.79% done, estimate finish Wed Jun  3 17:08:34 2026
+  5.14% done, estimate finish Wed Jun  3 17:08:34 2026
+  5.48% done, estimate finish Wed Jun  3 17:08:34 2026
+  5.82% done, estimate finish Wed Jun  3 17:08:34 2026
+  6.16% done, estimate finish Wed Jun  3 17:08:34 2026
+  6.51% done, estimate finish Wed Jun  3 17:08:34 2026
+  6.85% done, estimate finish Wed Jun  3 17:08:34 2026
+  7.19% done, estimate finish Wed Jun  3 17:08:34 2026
+  7.53% done, estimate finish Wed Jun  3 17:08:34 2026
+  7.88% done, estimate finish Wed Jun  3 17:08:34 2026
+  8.22% done, estimate finish Wed Jun  3 17:08:34 2026
+  8.56% done, estimate finish Wed Jun  3 17:08:34 2026
+  8.90% done, estimate finish Wed Jun  3 17:08:34 2026
+  9.24% done, estimate finish Wed Jun  3 17:08:34 2026
+  9.59% done, estimate finish Wed Jun  3 17:08:34 2026
+  9.93% done, estimate finish Wed Jun  3 17:08:34 2026
+ 10.27% done, estimate finish Wed Jun  3 17:08:34 2026
+ 10.61% done, estimate finish Wed Jun  3 17:08:34 2026
+ 10.96% done, estimate finish Wed Jun  3 17:08:34 2026
+ 11.30% done, estimate finish Wed Jun  3 17:08:34 2026
+ 11.64% done, estimate finish Wed Jun  3 17:08:34 2026
+ 11.98% done, estimate finish Wed Jun  3 17:08:34 2026
+ 12.33% done, estimate finish Wed Jun  3 17:08:34 2026
+ 12.67% done, estimate finish Wed Jun  3 17:08:34 2026
+ 13.01% done, estimate finish Wed Jun  3 17:08:34 2026
+ 13.35% done, estimate finish Wed Jun  3 17:08:34 2026
+ 13.70% done, estimate finish Wed Jun  3 17:08:34 2026
+ 14.04% done, estimate finish Wed Jun  3 17:08:34 2026
+ 14.38% done, estimate finish Wed Jun  3 17:08:34 2026
+ 14.72% done, estimate finish Wed Jun  3 17:08:34 2026
+ 15.06% done, estimate finish Wed Jun  3 17:08:34 2026
+ 15.41% done, estimate finish Wed Jun  3 17:08:34 2026
+ 15.75% done, estimate finish Wed Jun  3 17:08:34 2026
+ 16.09% done, estimate finish Wed Jun  3 17:08:34 2026
+ 16.43% done, estimate finish Wed Jun  3 17:08:34 2026
+ 16.78% done, estimate finish Wed Jun  3 17:08:34 2026
+ 17.12% done, estimate finish Wed Jun  3 17:08:34 2026
+ 17.46% done, estimate finish Wed Jun  3 17:08:34 2026
+ 17.80% done, estimate finish Wed Jun  3 17:08:34 2026
+ 18.15% done, estimate finish Wed Jun  3 17:08:34 2026
+ 18.49% done, estimate finish Wed Jun  3 17:08:34 2026
+ 18.83% done, estimate finish Wed Jun  3 17:08:34 2026
+ 19.17% done, estimate finish Wed Jun  3 17:08:34 2026
+ 19.52% done, estimate finish Wed Jun  3 17:08:34 2026
+ 19.86% done, estimate finish Wed Jun  3 17:08:34 2026
+ 20.20% done, estimate finish Wed Jun  3 17:08:34 2026
+ 20.54% done, estimate finish Wed Jun  3 17:08:34 2026
+ 20.89% done, estimate finish Wed Jun  3 17:08:34 2026
+ 21.23% done, estimate finish Wed Jun  3 17:08:34 2026
+ 21.57% done, estimate finish Wed Jun  3 17:08:34 2026
+ 21.91% done, estimate finish Wed Jun  3 17:08:34 2026
+ 22.26% done, estimate finish Wed Jun  3 17:08:34 2026
+ 22.60% done, estimate finish Wed Jun  3 17:08:34 2026
+ 22.94% done, estimate finish Wed Jun  3 17:08:34 2026
+ 23.28% done, estimate finish Wed Jun  3 17:08:34 2026
+ 23.62% done, estimate finish Wed Jun  3 17:08:34 2026
+ 23.97% done, estimate finish Wed Jun  3 17:08:34 2026
+ 24.31% done, estimate finish Wed Jun  3 17:08:34 2026
+ 24.65% done, estimate finish Wed Jun  3 17:08:34 2026
+ 24.99% done, estimate finish Wed Jun  3 17:08:34 2026
+ 25.34% done, estimate finish Wed Jun  3 17:08:34 2026
+ 25.68% done, estimate finish Wed Jun  3 17:08:34 2026
+ 26.02% done, estimate finish Wed Jun  3 17:08:37 2026
+ 26.36% done, estimate finish Wed Jun  3 17:08:37 2026
+ 26.71% done, estimate finish Wed Jun  3 17:08:37 2026
+ 27.05% done, estimate finish Wed Jun  3 17:08:37 2026
+ 27.39% done, estimate finish Wed Jun  3 17:08:37 2026
+ 27.73% done, estimate finish Wed Jun  3 17:08:37 2026
+ 28.08% done, estimate finish Wed Jun  3 17:08:37 2026
+ 28.42% done, estimate finish Wed Jun  3 17:08:37 2026
+ 28.76% done, estimate finish Wed Jun  3 17:08:37 2026
+ 29.10% done, estimate finish Wed Jun  3 17:08:37 2026
+ 29.44% done, estimate finish Wed Jun  3 17:08:37 2026
+ 29.79% done, estimate finish Wed Jun  3 17:08:37 2026
+ 30.13% done, estimate finish Wed Jun  3 17:08:37 2026
+ 30.47% done, estimate finish Wed Jun  3 17:08:37 2026
+ 30.81% done, estimate finish Wed Jun  3 17:08:37 2026
+ 31.16% done, estimate finish Wed Jun  3 17:08:37 2026
+ 31.50% done, estimate finish Wed Jun  3 17:08:37 2026
+ 31.84% done, estimate finish Wed Jun  3 17:08:37 2026
+ 32.18% done, estimate finish Wed Jun  3 17:08:37 2026
+ 32.53% done, estimate finish Wed Jun  3 17:08:37 2026
+ 32.87% done, estimate finish Wed Jun  3 17:08:37 2026
+ 33.21% done, estimate finish Wed Jun  3 17:08:37 2026
+ 33.55% done, estimate finish Wed Jun  3 17:08:36 2026
+ 33.90% done, estimate finish Wed Jun  3 17:08:36 2026
+ 34.24% done, estimate finish Wed Jun  3 17:08:36 2026
+ 34.58% done, estimate finish Wed Jun  3 17:08:36 2026
+ 34.92% done, estimate finish Wed Jun  3 17:08:36 2026
+ 35.27% done, estimate finish Wed Jun  3 17:08:36 2026
+ 35.61% done, estimate finish Wed Jun  3 17:08:36 2026
+ 35.95% done, estimate finish Wed Jun  3 17:08:36 2026
+ 36.29% done, estimate finish Wed Jun  3 17:08:36 2026
+ 36.63% done, estimate finish Wed Jun  3 17:08:36 2026
+ 36.98% done, estimate finish Wed Jun  3 17:08:36 2026
+ 37.32% done, estimate finish Wed Jun  3 17:08:36 2026
+ 37.66% done, estimate finish Wed Jun  3 17:08:36 2026
+ 38.00% done, estimate finish Wed Jun  3 17:08:36 2026
+ 38.35% done, estimate finish Wed Jun  3 17:08:36 2026
+ 38.69% done, estimate finish Wed Jun  3 17:08:36 2026
+ 39.03% done, estimate finish Wed Jun  3 17:08:36 2026
+ 39.37% done, estimate finish Wed Jun  3 17:08:36 2026
+ 39.72% done, estimate finish Wed Jun  3 17:08:36 2026
+ 40.06% done, estimate finish Wed Jun  3 17:08:36 2026
+ 40.40% done, estimate finish Wed Jun  3 17:08:36 2026
+ 40.74% done, estimate finish Wed Jun  3 17:08:36 2026
+ 41.09% done, estimate finish Wed Jun  3 17:08:36 2026
+ 41.43% done, estimate finish Wed Jun  3 17:08:36 2026
+ 41.77% done, estimate finish Wed Jun  3 17:08:36 2026
+ 42.11% done, estimate finish Wed Jun  3 17:08:36 2026
+ 42.45% done, estimate finish Wed Jun  3 17:08:36 2026
+ 42.80% done, estimate finish Wed Jun  3 17:08:36 2026
+ 43.14% done, estimate finish Wed Jun  3 17:08:36 2026
+ 43.48% done, estimate finish Wed Jun  3 17:08:36 2026
+ 43.82% done, estimate finish Wed Jun  3 17:08:36 2026
+ 44.17% done, estimate finish Wed Jun  3 17:08:36 2026
+ 44.51% done, estimate finish Wed Jun  3 17:08:36 2026
+ 44.85% done, estimate finish Wed Jun  3 17:08:36 2026
+ 45.19% done, estimate finish Wed Jun  3 17:08:36 2026
+ 45.54% done, estimate finish Wed Jun  3 17:08:36 2026
+ 45.88% done, estimate finish Wed Jun  3 17:08:36 2026
+ 46.22% done, estimate finish Wed Jun  3 17:08:36 2026
+ 46.56% done, estimate finish Wed Jun  3 17:08:36 2026
+ 46.91% done, estimate finish Wed Jun  3 17:08:36 2026
+ 47.25% done, estimate finish Wed Jun  3 17:08:36 2026
+ 47.59% done, estimate finish Wed Jun  3 17:08:36 2026
+ 47.93% done, estimate finish Wed Jun  3 17:08:36 2026
+ 48.28% done, estimate finish Wed Jun  3 17:08:36 2026
+ 48.62% done, estimate finish Wed Jun  3 17:08:36 2026
+ 48.96% done, estimate finish Wed Jun  3 17:08:36 2026
+ 49.30% done, estimate finish Wed Jun  3 17:08:36 2026
+ 49.65% done, estimate finish Wed Jun  3 17:08:36 2026
+ 49.99% done, estimate finish Wed Jun  3 17:08:36 2026
+ 50.33% done, estimate finish Wed Jun  3 17:08:35 2026
+ 50.67% done, estimate finish Wed Jun  3 17:08:35 2026
+ 51.01% done, estimate finish Wed Jun  3 17:08:35 2026
+ 51.36% done, estimate finish Wed Jun  3 17:08:35 2026
+ 51.70% done, estimate finish Wed Jun  3 17:08:35 2026
+ 52.04% done, estimate finish Wed Jun  3 17:08:35 2026
+ 52.38% done, estimate finish Wed Jun  3 17:08:35 2026
+ 52.73% done, estimate finish Wed Jun  3 17:08:35 2026
+ 53.07% done, estimate finish Wed Jun  3 17:08:35 2026
+ 53.41% done, estimate finish Wed Jun  3 17:08:35 2026
+ 53.75% done, estimate finish Wed Jun  3 17:08:35 2026
+ 54.10% done, estimate finish Wed Jun  3 17:08:35 2026
+ 54.44% done, estimate finish Wed Jun  3 17:08:35 2026
+ 54.78% done, estimate finish Wed Jun  3 17:08:35 2026
+ 55.12% done, estimate finish Wed Jun  3 17:08:35 2026
+ 55.47% done, estimate finish Wed Jun  3 17:08:35 2026
+ 55.81% done, estimate finish Wed Jun  3 17:08:35 2026
+ 56.15% done, estimate finish Wed Jun  3 17:08:35 2026
+ 56.49% done, estimate finish Wed Jun  3 17:08:35 2026
+ 56.84% done, estimate finish Wed Jun  3 17:08:35 2026
+ 57.18% done, estimate finish Wed Jun  3 17:08:35 2026
+ 57.52% done, estimate finish Wed Jun  3 17:08:35 2026
+ 57.86% done, estimate finish Wed Jun  3 17:08:35 2026
+ 58.21% done, estimate finish Wed Jun  3 17:08:35 2026
+ 58.55% done, estimate finish Wed Jun  3 17:08:35 2026
+ 58.89% done, estimate finish Wed Jun  3 17:08:35 2026
+ 59.23% done, estimate finish Wed Jun  3 17:08:35 2026
+ 59.57% done, estimate finish Wed Jun  3 17:08:35 2026
+ 59.92% done, estimate finish Wed Jun  3 17:08:35 2026
+ 60.26% done, estimate finish Wed Jun  3 17:08:35 2026
+ 60.60% done, estimate finish Wed Jun  3 17:08:35 2026
+ 60.94% done, estimate finish Wed Jun  3 17:08:35 2026
+ 61.29% done, estimate finish Wed Jun  3 17:08:35 2026
+ 61.63% done, estimate finish Wed Jun  3 17:08:35 2026
+ 61.97% done, estimate finish Wed Jun  3 17:08:35 2026
+ 62.31% done, estimate finish Wed Jun  3 17:08:35 2026
+ 62.66% done, estimate finish Wed Jun  3 17:08:35 2026
+ 63.00% done, estimate finish Wed Jun  3 17:08:35 2026
+ 63.34% done, estimate finish Wed Jun  3 17:08:37 2026
+ 63.68% done, estimate finish Wed Jun  3 17:08:37 2026
+ 64.02% done, estimate finish Wed Jun  3 17:08:37 2026
+ 64.37% done, estimate finish Wed Jun  3 17:08:37 2026
+ 64.71% done, estimate finish Wed Jun  3 17:08:37 2026
+ 65.05% done, estimate finish Wed Jun  3 17:08:37 2026
+ 65.39% done, estimate finish Wed Jun  3 17:08:37 2026
+ 65.74% done, estimate finish Wed Jun  3 17:08:37 2026
+ 66.08% done, estimate finish Wed Jun  3 17:08:37 2026
+ 66.42% done, estimate finish Wed Jun  3 17:08:37 2026
+ 66.76% done, estimate finish Wed Jun  3 17:08:36 2026
+ 67.11% done, estimate finish Wed Jun  3 17:08:36 2026
+ 67.45% done, estimate finish Wed Jun  3 17:08:36 2026
+ 67.79% done, estimate finish Wed Jun  3 17:08:36 2026
+ 68.13% done, estimate finish Wed Jun  3 17:08:36 2026
+ 68.48% done, estimate finish Wed Jun  3 17:08:36 2026
+ 68.82% done, estimate finish Wed Jun  3 17:08:36 2026
+ 69.16% done, estimate finish Wed Jun  3 17:08:36 2026
+ 69.50% done, estimate finish Wed Jun  3 17:08:36 2026
+ 69.85% done, estimate finish Wed Jun  3 17:08:36 2026
+ 70.19% done, estimate finish Wed Jun  3 17:08:36 2026
+ 70.53% done, estimate finish Wed Jun  3 17:08:36 2026
+ 70.87% done, estimate finish Wed Jun  3 17:08:36 2026
+ 71.22% done, estimate finish Wed Jun  3 17:08:36 2026
+ 71.56% done, estimate finish Wed Jun  3 17:08:36 2026
+ 71.90% done, estimate finish Wed Jun  3 17:08:36 2026
+ 72.24% done, estimate finish Wed Jun  3 17:08:36 2026
+ 72.58% done, estimate finish Wed Jun  3 17:08:36 2026
+ 72.93% done, estimate finish Wed Jun  3 17:08:36 2026
+ 73.27% done, estimate finish Wed Jun  3 17:08:36 2026
+ 73.61% done, estimate finish Wed Jun  3 17:08:36 2026
+ 73.95% done, estimate finish Wed Jun  3 17:08:36 2026
+ 74.30% done, estimate finish Wed Jun  3 17:08:36 2026
+ 74.64% done, estimate finish Wed Jun  3 17:08:36 2026
+ 74.98% done, estimate finish Wed Jun  3 17:08:36 2026
+ 75.32% done, estimate finish Wed Jun  3 17:08:36 2026
+ 75.67% done, estimate finish Wed Jun  3 17:08:36 2026
+ 76.01% done, estimate finish Wed Jun  3 17:08:36 2026
+ 76.35% done, estimate finish Wed Jun  3 17:08:36 2026
+ 76.69% done, estimate finish Wed Jun  3 17:08:36 2026
+ 77.04% done, estimate finish Wed Jun  3 17:08:36 2026
+ 77.38% done, estimate finish Wed Jun  3 17:08:36 2026
+ 77.72% done, estimate finish Wed Jun  3 17:08:36 2026
+ 78.06% done, estimate finish Wed Jun  3 17:08:36 2026
+ 78.40% done, estimate finish Wed Jun  3 17:08:36 2026
+ 78.75% done, estimate finish Wed Jun  3 17:08:36 2026
+ 79.09% done, estimate finish Wed Jun  3 17:08:36 2026
+ 79.43% done, estimate finish Wed Jun  3 17:08:36 2026
+ 79.77% done, estimate finish Wed Jun  3 17:08:36 2026
+ 80.12% done, estimate finish Wed Jun  3 17:08:36 2026
+ 80.46% done, estimate finish Wed Jun  3 17:08:36 2026
+ 80.80% done, estimate finish Wed Jun  3 17:08:36 2026
+ 81.14% done, estimate finish Wed Jun  3 17:08:36 2026
+ 81.49% done, estimate finish Wed Jun  3 17:08:36 2026
+ 81.83% done, estimate finish Wed Jun  3 17:08:36 2026
+ 82.17% done, estimate finish Wed Jun  3 17:08:36 2026
+ 82.51% done, estimate finish Wed Jun  3 17:08:36 2026
+ 82.86% done, estimate finish Wed Jun  3 17:08:36 2026
+ 83.20% done, estimate finish Wed Jun  3 17:08:36 2026
+ 83.54% done, estimate finish Wed Jun  3 17:08:36 2026
+ 83.88% done, estimate finish Wed Jun  3 17:08:36 2026
+ 84.23% done, estimate finish Wed Jun  3 17:08:36 2026
+ 84.57% done, estimate finish Wed Jun  3 17:08:36 2026
+ 84.91% done, estimate finish Wed Jun  3 17:08:36 2026
+ 85.25% done, estimate finish Wed Jun  3 17:08:36 2026
+ 85.60% done, estimate finish Wed Jun  3 17:08:36 2026
+ 85.94% done, estimate finish Wed Jun  3 17:08:36 2026
+ 86.28% done, estimate finish Wed Jun  3 17:08:36 2026
+ 86.62% done, estimate finish Wed Jun  3 17:08:36 2026
+ 86.96% done, estimate finish Wed Jun  3 17:08:36 2026
+ 87.31% done, estimate finish Wed Jun  3 17:08:36 2026
+ 87.65% done, estimate finish Wed Jun  3 17:08:36 2026
+ 87.99% done, estimate finish Wed Jun  3 17:08:36 2026
+ 88.33% done, estimate finish Wed Jun  3 17:08:36 2026
+ 88.68% done, estimate finish Wed Jun  3 17:08:36 2026
+ 89.02% done, estimate finish Wed Jun  3 17:08:36 2026
+ 89.36% done, estimate finish Wed Jun  3 17:08:36 2026
+ 89.70% done, estimate finish Wed Jun  3 17:08:36 2026
+ 90.05% done, estimate finish Wed Jun  3 17:08:36 2026
+ 90.39% done, estimate finish Wed Jun  3 17:08:36 2026
+ 90.73% done, estimate finish Wed Jun  3 17:08:36 2026
+ 91.07% done, estimate finish Wed Jun  3 17:08:36 2026
+ 91.42% done, estimate finish Wed Jun  3 17:08:36 2026
+ 91.76% done, estimate finish Wed Jun  3 17:08:36 2026
+ 92.10% done, estimate finish Wed Jun  3 17:08:36 2026
+ 92.44% done, estimate finish Wed Jun  3 17:08:36 2026
+ 92.78% done, estimate finish Wed Jun  3 17:08:36 2026
+ 93.13% done, estimate finish Wed Jun  3 17:08:36 2026
+ 93.47% done, estimate finish Wed Jun  3 17:08:36 2026
+ 93.81% done, estimate finish Wed Jun  3 17:08:36 2026
+ 94.15% done, estimate finish Wed Jun  3 17:08:36 2026
+ 94.50% done, estimate finish Wed Jun  3 17:08:36 2026
+ 94.84% done, estimate finish Wed Jun  3 17:08:36 2026
+ 95.18% done, estimate finish Wed Jun  3 17:08:36 2026
+ 95.52% done, estimate finish Wed Jun  3 17:08:36 2026
+ 95.87% done, estimate finish Wed Jun  3 17:08:36 2026
+ 96.21% done, estimate finish Wed Jun  3 17:08:36 2026
+ 96.55% done, estimate finish Wed Jun  3 17:08:36 2026
+ 96.89% done, estimate finish Wed Jun  3 17:08:36 2026
+ 97.24% done, estimate finish Wed Jun  3 17:08:36 2026
+ 97.58% done, estimate finish Wed Jun  3 17:08:36 2026
+ 97.92% done, estimate finish Wed Jun  3 17:08:36 2026
+ 98.26% done, estimate finish Wed Jun  3 17:08:36 2026
+ 98.61% done, estimate finish Wed Jun  3 17:08:36 2026
+ 98.95% done, estimate finish Wed Jun  3 17:08:36 2026
+ 99.29% done, estimate finish Wed Jun  3 17:08:36 2026
+ 99.63% done, estimate finish Wed Jun  3 17:08:36 2026
+ 99.97% done, estimate finish Wed Jun  3 17:08:36 2026
+Total translation table size: 2048
+Total rockridge attributes bytes: 108749
+Total directory bytes: 204758
+Path table size(bytes): 430
+Max brk space used f9000
+1460377 extents written (2852 MB)
+INFO: [Errno 113] No route to host occurred waiting for 'management-001' to be ready, trying again
+INFO: [Errno 113] No route to host occurred waiting for 'management-001' to be ready, trying again

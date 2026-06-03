@@ -1,0 +1,2 @@
+[0;32m[INFO] Switching to v0.68.1[0;39m
+[0;32m[INFO] Switching completed[0;39m

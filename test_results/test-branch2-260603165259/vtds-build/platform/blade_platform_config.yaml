@@ -1,0 +1,110 @@
+packages:
+  dhcp:
+    blade_classes: null
+    packages:
+    - kea
+    preconfig_settings:
+    - kea-ctrl-agent kea-ctrl-agent/make_a_choice select configured_random_password
+    services_disable:
+    - kea-dhcp4-server
+    - kea-dhcp6-server
+    - kea-dhcp-ddns-server
+    - kea-ctrl-agent
+    services_enable: []
+  miscelaneous_tools:
+    blade_classes: null
+    packages:
+    - iputils-ping
+    - dnsutils
+    - emacs
+    - vim
+    preconfig_settings:
+    - postfix postfix/main_mailer_type select No configuration
+    services_disable: []
+    services_enable: []
+  nat_support:
+    blade_classes: null
+    packages:
+    - nftables
+    preconfig_settings: []
+    services_disable: []
+    services_enable: []
+  network_virtualization:
+    blade_classes: null
+    packages:
+    - bridge-utils
+    preconfig_settings: []
+    services_disable: []
+    services_enable: []
+  node_virtualization:
+    blade_classes: null
+    packages:
+    - libvirt-daemon-system
+    - virtinst
+    - qemu-kvm
+    - libvirt-clients
+    - libguestfs-tools
+    - python3-libvirt
+    - mkisofs
+    - libvirt-dev
+    - apache2-utils
+    preconfig_settings: []
+    services_disable: []
+    services_enable:
+    - libvirtd
+  openchami_dns_support:
+    blade_classes: null
+    packages:
+    - dnsmasq
+    preconfig_settings: []
+    services_disable:
+    - dnsmasq
+    services_enable: []
+  python:
+    blade_classes: null
+    packages:
+    - python3.10
+    preconfig_settings: []
+    services_disable: []
+    services_enable: []
+  python_module_installation:
+    blade_classes: null
+    packages:
+    - python3-pip
+    - python3.10-venv
+    - git
+    preconfig_settings: []
+    services_disable: []
+    services_enable: []
+  sushy_emulator_support:
+    blade_classes: null
+    packages:
+    - libvirt-dev
+    - apache2-utils
+    - nginx
+    preconfig_settings: []
+    services_disable:
+    - nginx
+    services_enable: []
+python:
+  blade_venv_path: /root/blade-venv
+  modules:
+    libvirt-python:
+      delete: false
+      metadata:
+        version: null
+      module_name: libvirt-python
+      source_type: pypi
+    sushi-tools:
+      delete: false
+      metadata:
+        url: https://github.com/Cray-HPE/sushy-tools-vshasta-v3.git
+        version: With-Libvirt-By-Name
+      module_name: sushy-tools
+      source_type: git
+    yaml:
+      delete: false
+      metadata:
+        version: null
+      module_name: pyyaml
+      source_type: pypi

@@ -1,0 +1,2 @@
+[32mSwitching default version to v1.9.7[0m
+[32mDefault version (when not overridden by .terraform-version or TFENV_TERRAFORM_VERSION) is now: 1.9.7[0m
