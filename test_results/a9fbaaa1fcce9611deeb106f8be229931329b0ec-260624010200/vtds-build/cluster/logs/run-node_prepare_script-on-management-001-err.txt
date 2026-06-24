@@ -1,0 +1,12 @@
+Importing GPG key 0x350D275D:
+ Userid     : "Rocky Enterprise Software Foundation - Release key 2022 <releng@rockylinux.org>"
+ Fingerprint: 21CB 256A E16F C54C 6E65 2949 702D 426D 350D 275D
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-9
+Importing GPG key 0x3228467C:
+ Userid     : "Fedora (epel9) <epel@fedoraproject.org>"
+ Fingerprint: FF8A D134 4597 106E CE81 3B91 8A38 72BF 3228 467C
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-9
+Cloning into 'openchami_release'...
+fatal: unable to read tree (a9fbaaa1fcce9611deeb106f8be229931329b0ec)
+exiting on error [128] from /home/rocky/OpenCHAMI-Prepare.sh:123
+exiting on error [128] from /root/prepare_node.sh:142
